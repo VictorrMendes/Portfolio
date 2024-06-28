@@ -1,0 +1,251 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #181818;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 87%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+.logo {
+    text-decoration: none;
+    color: #00d2ff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    margin-left: 3%;
+}
+.menu-items {
+    list-style: none;
+    display: flex;
+    margin-right: 15%;
+}
+.menu-items li {
+    margin-right: 20px;
+}
+.menu-items li a {
+    margin-left: 20px; 
+    color:  #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.menu-items li a:hover {
+color: #00d2ff;
+}
+.hero {
+    background-color: #181818;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: start;
+    margin-right: 50px;
+    margin-top: 14%;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: start;
+
+}
+
+.hero-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-align: start;
+    color: #00d2ff;
+
+}
+
+.hero-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: start;
+    max-width: 80%;
+
+}
+
+.hero-image {
+    max-width: 100%;
+    margin-right: 5%;
+
+}
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: #00b0ff;
+    padding: 15px 30px;
+    border: solid #00b0ff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.btn:hover {
+    background-color: rgb(51, 51, 51);;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.content {
+    width: 70%; 
+    padding: 20px;
+    background-color: #181818;
+    color: #fff; 
+}
+.fundo {
+    background-color: #2828282d;
+}
+.about {
+    margin-right: 50px;
+}
+.about h2 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 10%;
+}
+.about p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+    align-items: start;
+    width: 80%;
+}
+.sidebar {
+    width: 10% auto;
+    padding: 40px;
+    background-color: #282828;
+    color: #fff;position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    border-radius: 20px;
+    right: 10%;
+
+}
+.sidebar img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.sidebar p{
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+/*test*/
+.social-link {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #00d2ff;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skill {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.skill img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.laboratorio-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.laboratorio-item {
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.laboratorio-item img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.skills span {
+    background-color: #383838;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-size: 0.8rem;
+}
+
+.contato-info {
+    margin-top: 20px;
+}
+
+.contato-info p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #282828;
+    padding: 20px 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer a {
+    color: #00d2ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00b0ff;
+}
