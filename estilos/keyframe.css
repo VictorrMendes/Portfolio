@@ -1,0 +1,48 @@
+@keyframes progress-bar-html {
+    0% {
+      width: 0%; 
+    }
+    100% {
+      width: 70%;
+    }
+}
+@keyframes progress-bar-css {
+    0% {
+      width: 0%; 
+    }
+    100% {
+      width: 70%; 
+    }
+}
+@keyframes progress-bar-js {
+    0% {
+      width: 0%; 
+    }
+    100% {
+      width: 40%; 
+    }
+  }
+@keyframes progress-bar-gt {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 50%; 
+    }
+  }
+@keyframes progress-bar-vs {
+    0% {
+      width: 0%; 
+    }
+    100% {
+      width: 60%; 
+    }
+}
+@keyframes progress-bar-excell {
+    0% {
+      width: 0%; 
+    }
+    100% {
+      width: 50%; 
+    }
+}
