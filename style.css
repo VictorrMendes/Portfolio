@@ -1,4 +1,4 @@
-@import "./estilos/keyframe.css";
+@import "estilos/keyframe.css";
 body {
     font-family: "Roboto Mono", monospace, sans-serif;
     background-color: #181818;
