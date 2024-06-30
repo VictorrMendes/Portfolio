@@ -46,3 +46,16 @@
       width: 50%; 
     }
 }
+@keyframes pular {
+    0% {
+     transform: translateY(7%);
+    }
+   
+    50% {
+     transform: translateY(-2%);
+    }
+   
+    100% {
+     transform: translateY(7%);
+    }
+   }
