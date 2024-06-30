@@ -1,4 +1,4 @@
-@import "./estilos/keyframe.css";
+@import "estilos/keyframe.css";
 body {
     font-family: "Roboto Mono", monospace, sans-serif;
     background-color: #181818;
@@ -365,6 +365,7 @@ footer a {
 footer a:hover {
     color: #00b0ff;
 }
+<<<<<<< HEAD
 #butao{
     display: flex;
     flex-direction: column;
@@ -410,3 +411,5 @@ footer a:hover {
    }
 
   
+=======
+>>>>>>> 7c84399b7b62d3746f2479f1cc55e2442048e346
