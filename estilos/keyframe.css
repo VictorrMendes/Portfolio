@@ -19,7 +19,7 @@
       width: 0%; 
     }
     100% {
-      width: 40%; 
+      width: 20%; 
     }
   }
 @keyframes progress-bar-gt {
@@ -58,4 +58,14 @@
     100% {
      transform: translateY(7%);
     }
-   }
+}
+@keyframes animaMarcador {
+    50% {
+        border-right: transparent;
+    }
+}
+@keyframes animatext {
+    0% {
+        width: 0;
+    }
+}
