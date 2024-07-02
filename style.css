@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-image: linear-gradient(179deg, rgb(39 36 36 / 93%), #1c1c1c);
     color: #fff;
     padding: 10px;
     gap: 10px;
@@ -27,7 +27,7 @@ body {
     z-index: 10;
 }
 .logo {
-    color: #00d2ff;
+    color: #622edb;
     font-weight: bold;
     font-size: 1.5rem;
     position: relative;
@@ -54,7 +54,7 @@ body {
     transition: color 0.3s ease;
 }
 .menu_items li a:hover {
-    color: #00d2ff;
+    color: #622edb;
     text-decoration:underline;
 }
 .hero {
@@ -83,7 +83,7 @@ body {
     font-size: 1.3rem;
     margin-bottom: 10px;
     text-align: start;
-    color: #00d2ff;
+    color: #622edb;
 }
 .hero-content p {
     font-size: 1.2rem;
@@ -99,9 +99,9 @@ body {
 .btn {
     display: inline-block;
     background: transparent;
-    color: #00b0ff;
+    color: #622edb;
     padding: 15px 30px;
-    border: solid #00b0ff;
+    border: solid #622edb;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -130,7 +130,7 @@ body {
     position: relative;
     left: 35%;
     display: none;
-    background-color: #01e056;
+    background-image: linear-gradient(2deg, #0ff30f, #916eb1de);
     border: solid 1px #01e0572d;
     animation: pular 1s infinite;
     box-shadow: rgb(0 233 63 / 29%) 2px 3px 20px, rgba(236, 230, 230, 0.12) -20px 3px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(241, 236, 236, 0.17) 0px 12px 13px, rgba(221, 217, 217, 0.09) 0px -3px 5px;
