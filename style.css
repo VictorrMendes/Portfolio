@@ -72,41 +72,43 @@ body {
     justify-content: center;
     position: relative;
 }
-.hero-content {
+.hero_content {
     text-align: start;
     margin-right: 50px;
     margin-top: 14%;
     align-items: center;
     height: 50vh;
     font-size: 72%;
-
 }
 .text{
     position: relative;
     bottom: 30%;
 }
-.hero-content h1 {
+.hero_content h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: start;
 }
-.hero-content h2 {
+.hero_content h2 {
     font-size: 1.3rem;
     margin-bottom: 10px;
     text-align: start;
     color: #622edb;
 }
-.hero-content p {
-    font-size: 1.2rem;
+.hero_content p {
+    font-size: 1.2vw;
     line-height: 1;
     margin-bottom: 20px;
     text-align: justify;
     max-width: 90%;
 }
-.hero-image {
-    max-width: 75%;
+.hero_image  {
     margin-right: 5%;
     z-index: 9;
+}
+.hero_image img {
+    max-width: 300px;
+   
 }
 .btn {
     display: inline-block;
@@ -190,7 +192,7 @@ body {
     bottom: 10%;
 }
 .about p {
-    font-size: 1rem;
+    font-size: 1.1vw;
     line-height: 1.5rem;
     margin-bottom: 20px;
     align-items: start;
@@ -353,6 +355,7 @@ body {
     align-items: center;
     left: 5%;
     position: relative;
+
 }
 .laboratorio h2 {
     text-align: center;
@@ -364,10 +367,10 @@ body {
 .laboratorio-list {
     display: flex;
     margin-top: 20px;
-    display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
     gap: 15px;
+    display: flex;
 }
 .laboratorio-list::-webkit-scrollbar {
     display: none;
@@ -386,12 +389,15 @@ body {
 }
 .laboratorio-item p{
     text-align: justify;
-    font-size: 0.8rem;
+    font-size: 1vw;
     margin-bottom: 20%;
     text-align: justify;
     font-size: 0.8rem;
     margin-bottom: 20px; /
 }
+
+
+
 .laboratorio-item img {
     max-width: 100%;
     margin-bottom: 10px;
@@ -420,10 +426,10 @@ body {
     box-sizing: border-box;
 }
 
-
-.contato {
-    position: relative;
-    left: 20% ;
+#contato{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 .contato h2{
     text-align: center;
