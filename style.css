@@ -113,7 +113,7 @@ body {
 .btn {
     display: inline-block;
     background: transparent;
-    color: #622edb;
+    color: #967ece;
     padding: 15px 30px;
     border: solid #622edb;
     border-radius: 5px;
@@ -460,6 +460,8 @@ footer a {
 
 footer a:hover {
     color: #00b0ff;
+    text-decoration: underline;
+
 }
 #particles-js {
     position: absolute;
