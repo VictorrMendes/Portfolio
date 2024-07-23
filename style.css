@@ -1,4 +1,5 @@
 @import "./estilos/keyframe.css";
+
 body {
     font-family: "Roboto Mono", monospace, sans-serif;
     background-color: #181818;
@@ -12,7 +13,7 @@ body {
     margin: 0 auto;
     padding: 15px;
     display: flex;    
-    
+
 }
 
 /*Barra de Navegação*/
@@ -38,7 +39,7 @@ body {
     margin-left: 3%;
     font-family: monospace;
     white-space: nowrap;
-    width:13ch ;
+    width:14ch ;
     overflow: hidden;
     border-right: 4px solid;
     animation: animaMarcador 0.8s linear infinite, animatext steps(13) 4s ;
@@ -78,7 +79,7 @@ body {
     margin-top: 14%;
     align-items: center;
     height: 50vh;
-    font-size: 72%;
+    font-size: 20px;
 }
 .text{
     position: relative;
@@ -108,7 +109,6 @@ body {
 }
 .hero_image img {
     max-width: 300px;
-   
 }
 .btn {
     display: inline-block;
@@ -130,7 +130,8 @@ body {
 #butao{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100vh;
+    align-items: start;
 }
 #butao:hover .box {
     opacity: 1;
@@ -143,9 +144,9 @@ body {
     padding: 15px;
     border-radius: 2px 2px 10px 10px;
     cursor: pointer;
-    width: 30px;
+    width: 100px;
     position: relative;
-    left: 35%;
+    left: 6%;
     display: none;
     background-image: linear-gradient(2deg, #0ff30f, #8787877d);
     border: solid 1px #01e0572d;
@@ -184,6 +185,7 @@ body {
     margin-top: 4%;
     z-index: 8;
     text-align: justify;
+
 }
 .about h2 {
     font-size: 1.7rem;
