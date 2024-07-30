@@ -6,13 +6,14 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
-    padding-top: 60px; 
+    padding-top: 60px;
 }
+
 .container {
     max-width: 87%;
     margin: 0 auto;
     padding: 15px;
-    display: flex;    
+    display: flex;
 
 }
 
@@ -28,9 +29,10 @@ body {
     gap: 10px;
     width: 100%;
     position: fixed;
-    top: 0; 
+    top: 0;
     z-index: 10;
 }
+
 .logo {
     color: #622edb;
     font-weight: bold;
@@ -39,28 +41,32 @@ body {
     margin-left: 3%;
     font-family: monospace;
     white-space: nowrap;
-    width:14ch ;
+    width: 14ch;
     overflow: hidden;
     border-right: 4px solid;
-    animation: animaMarcador 0.8s linear infinite, animatext steps(13) 4s ;
+    animation: animaMarcador 0.8s linear infinite, animatext steps(13) 4s;
 }
+
 .menu_items {
     list-style: none;
     display: flex;
     margin-right: 15%;
 }
+
 .menu_items li {
     margin-right: 20px;
 }
+
 .menu_items li a {
-    margin-left: 20px; 
-    color:  #fff;
+    margin-left: 20px;
+    color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 .menu_items li a:hover {
     color: #622edb;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 /*Começo da apresentação*/
@@ -73,6 +79,7 @@ body {
     justify-content: center;
     position: relative;
 }
+
 .hero_content {
     text-align: start;
     margin-right: 50px;
@@ -81,21 +88,25 @@ body {
     height: 50vh;
     font-size: 20px;
 }
-.text{
+
+.text {
     position: relative;
     bottom: 30%;
 }
+
 .hero_content h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: start;
 }
+
 .hero_content h2 {
     font-size: 1.3rem;
     margin-bottom: 10px;
     text-align: start;
     color: #622edb;
 }
+
 .hero_content p {
     font-size: 1.2vw;
     line-height: 1;
@@ -103,13 +114,16 @@ body {
     text-align: justify;
     max-width: 90%;
 }
-.hero_image  {
+
+.hero_image {
     margin-right: 5%;
     z-index: 9;
 }
+
 .hero_image img {
     max-width: 300px;
 }
+
 .btn {
     display: inline-block;
     background: transparent;
@@ -123,16 +137,19 @@ body {
     cursor: pointer;
     z-index: 10;
 }
+
 .btn:hover {
-    background-color: rgb(51, 51, 51);;
+    background-color: rgb(51, 51, 51);
+    ;
 }
 
-#butao{
+#butao {
     display: flex;
     flex-direction: column;
     width: 100vh;
     align-items: start;
 }
+
 #butao:hover .box {
     opacity: 1;
 }
@@ -152,22 +169,26 @@ body {
     border: solid 1px #01e0572d;
     animation: pular 1s infinite;
     box-shadow: rgb(0 233 63 / 29%) 2px 3px 20px, rgba(236, 230, 230, 0.12) -20px 3px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(241, 236, 236, 0.17) 0px 12px 13px, rgba(221, 217, 217, 0.09) 0px -3px 5px;
-    opacity: 0; 
+    opacity: 0;
     border-top: none;
 }
-.box a{
+
+.box a {
     text-decoration: none;
     color: #fff;
 }
+
 .section {
     padding: 80px 0;
 }
+
 .content {
-    width: 70%; 
+    width: 70%;
     padding: 20px;
     background-color: #181818;
-    color: #fff; 
+    color: #fff;
 }
+
 /*Fundo do sobre*/
 .fundo {
     background-color: #2828282d;
@@ -176,9 +197,10 @@ body {
 
 /*Sobre*/
 
-#sobre{
+#sobre {
     margin-top: 4%;
 }
+
 .about {
     font-size: 82%;
     margin-right: 50px;
@@ -187,12 +209,14 @@ body {
     text-align: justify;
 
 }
+
 .about h2 {
     font-size: 1.7rem;
     margin-bottom: 10px;
     position: relative;
     bottom: 10%;
 }
+
 .about p {
     font-size: 1.1vw;
     line-height: 1.5rem;
@@ -204,7 +228,7 @@ body {
 /*aprestação*/
 
 .sidebar {
-    width:  auto;
+    width: auto;
     max-width: 300px;
     max-height: 300px;
     padding: 40px;
@@ -212,142 +236,164 @@ body {
     color: #fff;
     position: relative;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     border-radius: 20px;
     right: 10%;
     margin-top: 4%;
 }
+
 .sidebar img {
     max-width: 200px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
-.sidebar p{
+
+.sidebar p {
     text-align: center;
 }
+
 .social-links {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
+
 .social-link {
     margin: 0 10px;
     color: #ffffff;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
+
 #github:hover {
     color: #3c39f0;
 }
+
 #linkedin:hover {
     color: #30d0ec;
 }
+
 #whatsapp:hover {
     color: #39f039;
 }
+
 #e-mail:hover {
     color: #e67966de;
 }
-#bnt_lab{
+
+#bnt_lab {
     margin-top: 15px;
 }
 
 /*Skills*/
 
-.habilidade{
+.habilidade {
     width: 100%;
-    margin-bottom:20% ;
+    margin-bottom: 20%;
 
 }
-#skills{
+
+#skills {
     margin-top: 10%;
     background-image: url(./imagem/pexeus.jpg);
-    background-size:     cover;               
-    background-repeat:   no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
 }
-.habilidade h2{
+
+.habilidade h2 {
     text-align: center;
     margin-bottom: 10%;
 }
+
 .skills-list {
     display: flex;
     justify-content: center;
     margin-top: 15%;
 }
+
 .skill {
     margin: 0 20px;
     text-align: center;
 }
+
 .skill img {
     max-width: 50px;
     margin-bottom: 10px;
 }
-.bar{
-    overflow: hidden; 
+
+.bar {
+    overflow: hidden;
     position: relative;
 }
+
 .progress_base {
-    width: 80px; 
+    width: 80px;
     height: 5px;
     background-color: #ddd;
     bottom: 0;
     left: 0;
 }
+
 .progress_html {
-  width: 0%;
-  height: 5px;
-  background-color: #425bca;
-  animation: progress-bar-html 5s infinite forwards; 
-  position: absolute; 
-  bottom: 0;
-  left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #425bca;
+    animation: progress-bar-html 5s infinite forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
 .progress_css {
-  width: 0%;
-  height: 5px;
-  background-color: #425bca;
-  animation: progress-bar-css 5s infinite forwards; 
-  position: absolute; 
-  bottom: 0;
-  left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #425bca;
+    animation: progress-bar-css 5s infinite forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
 .progress_js {
-  width: 0%;
-  height: 5px;
-  background-color: #425bca;
-  animation: progress-bar-js 5s infinite forwards; 
-  position: absolute; 
-  bottom: 0;
-  left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #425bca;
+    animation: progress-bar-js 5s infinite forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
 .progress_vs {
-  width: 0%;
-  height: 5px;
-  background-color: #425bca;
-  animation: progress-bar-vs 5s infinite forwards; 
-  position: absolute; 
-  bottom: 0;
-  left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #425bca;
+    animation: progress-bar-vs 5s infinite forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
 .progress_gt {
-  width: 0%;
-  height: 5px;
-  background-color: #425bca;
-  animation: progress-bar-gt 5s infinite forwards; 
-  position: absolute; 
-  bottom: 0;
-  left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #425bca;
+    animation: progress-bar-gt 5s infinite forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
 .progress_excell {
-  width: 0%;
-  height: 5px;
-  background-color: #425bca;
-  animation: progress-bar-excell 5s infinite forwards; 
-  position: absolute; 
-  bottom: 0;
-  left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #425bca;
+    animation: progress-bar-excell 5s infinite forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /*Projetos*/
@@ -360,13 +406,16 @@ body {
     position: relative;
 
 }
+
 .laboratorio h2 {
     text-align: center;
 }
+
 .laboratorio h3 {
     text-align: center;
     margin-top: 10%;
 }
+
 .laboratorio-list {
     display: flex;
     margin-top: 20px;
@@ -375,9 +424,11 @@ body {
     gap: 15px;
     display: flex;
 }
+
 .laboratorio-list::-webkit-scrollbar {
     display: none;
 }
+
 .laboratorio-item {
     background-color: #282828;
     padding: 20px;
@@ -385,18 +436,19 @@ body {
     text-align: center;
     width: 30%;
     object-fit: contain;
-    min-height: 250px; 
+    min-height: 250px;
     display: flex;
-    flex-direction: column; 
-    justify-content: space-between; /  
+    flex-direction: column;
+    justify-content: space-between;/
 }
-.laboratorio-item p{
+
+.laboratorio-item p {
     text-align: justify;
     font-size: 1vw;
     margin-bottom: 20%;
     text-align: justify;
     font-size: 0.8rem;
-    margin-bottom: 20px; /
+    margin-bottom: 20px;/
 }
 
 
@@ -407,9 +459,11 @@ body {
     border-radius: 10px;
     height: 40%;
 }
-.laboratorio-item img:hover{
+
+.laboratorio-item img:hover {
     transform: scale(1.2);
 }
+
 .ferramentas {
     display: flex;
     flex-wrap: wrap;
@@ -417,6 +471,7 @@ body {
     margin-top: 10px;
     gap: 10px;
 }
+
 .ferramentas span {
     background-color: #383838;
     color: #fff;
@@ -425,28 +480,33 @@ body {
     margin: 0 5px;
     font-size: 0.8rem;
     object-fit: contain;
-    display:flexbox;
+    display: flexbox;
     box-sizing: border-box;
 }
 
-#contato{
+#contato {
     align-items: center;
     display: flex;
     flex-direction: column;
 }
-.contato h2{
+
+.contato h2 {
     text-align: center;
 }
-.contato a{
+
+.contato a {
     text-decoration: none;
     color: #fff;
 }
+
 .contato-info {
     margin-top: 20px;
 }
+
 .contato-info p {
     margin-bottom: 10px;
 }
+
 footer {
     background-color: #282828;
     padding: 20px 0;
@@ -466,15 +526,17 @@ footer a:hover {
     text-decoration: underline;
 
 }
+
 #particles-js {
     position: absolute;
 }
+
 #particles-js {
-    position: absolute; 
-    top: 10%; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    z-index: 8; 
-    pointer-events: none; 
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    pointer-events: none;
 }

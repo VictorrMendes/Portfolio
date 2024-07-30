@@ -6,11 +6,11 @@ const lamp = document.querySelector('#lamp img')
 const semafaro = document.querySelector('#semafaro_img')
 
 //botão
-downloadButton.addEventListener('mouseover', function baixar(){
-    box.style.display = 'block';
+downloadButton.addEventListener('mouseover', function baixar() {
+  box.style.display = 'block';
 },);
-downloadButton.addEventListener('mouseout', function baixar(){
-    box.style.display = 'none';
+downloadButton.addEventListener('mouseout', function baixar() {
+  box.style.display = 'none';
 },);
 
 //eventos
@@ -28,18 +28,18 @@ semafaro.addEventListener('mouseover', verde);
 
 //função lampada
 function acender() {
-    lamp.src ="./imagem/lampOn.jpeg"
+  lamp.src = "./imagem/lampOn.jpeg"
 }
 function apagar() {
-    lamp.src ="./imagem/lampOff.jpeg"
+  lamp.src = "./imagem/lampOff.jpeg"
 }
 
 //função semafaro
 function verde() {
-    semafaro.src ="./imagem/luz(1).jpeg";
+  semafaro.src = "./imagem/luz(1).jpeg";
 }
 function vermelho() {
-    semafaro.src ="./imagem/luz(3).jpeg"
+  semafaro.src = "./imagem/luz(3).jpeg"
 }
 
 //particulas
@@ -166,7 +166,7 @@ document.body.appendChild(stats.domElement);
 
 count_particles = document.querySelector('.js-count-particles');
 
-update = function() {
+update = function () {
   stats.begin();
   stats.end();
   if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
