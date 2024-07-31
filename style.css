@@ -289,13 +289,13 @@ body {
 /*Skills*/
 
 .habilidade {
-    width: 100%;
-    margin-bottom: 20%;
+    width: 10%;
+    margin-bottom: 10%;
 
 }
 
 #skills {
-    margin-top: 10%;
+    margin-top: 20%;
     background-image: url(./imagem/pexeus.jpg);
     background-size: cover;
     background-repeat: no-repeat;

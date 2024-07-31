@@ -42,16 +42,16 @@
     }
 
     .hero_content {
-        margin-right: 7px;
+        margin-right: -70px;
         margin-top: 10%;
         height: 500px;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .text {
         position: relative;
         bottom: 10%;
-        margin-right: 0;
+        margin-right: 2px;
     }
 
     .hero_content h1 {
@@ -81,7 +81,8 @@
     .hero_image img {
         max-width: 180px;
         position: relative;
-        right: 0;
+        right: 20px;
+        overflow: hidden;
         top: 80%;
     }
 
@@ -132,35 +133,6 @@
     justify-content: center;
     margin-bottom: 100px;
 }
-    /*Sobre*/
-
-    #sobre{
-        margin-top: 10%;
-    }
-    .about {
-        font-size: 15px;
-        margin-right: 10px;
-        margin-top: 15%;
-        z-index: 8;
-        text-align: justify;
-    }
-    .about h2 {
-        font-size: 1.7rem;
-        margin-bottom: 10px;
-        position: relative;
-        bottom: 10%;
-    }
-
-    .about p {
-        font-size: 18px;
-        text-align: start;
-        line-height: 1.2em;
-        margin-bottom: 20px;
-        align-items: start;
-        width: 90%;
-        margin-left: 10px;
-        margin-bottom: 20px;
-    }
 
 
 
@@ -207,9 +179,9 @@
         }
 
         .hero_content p {
-            font-size: 16px;
+            font-size: 10px;
             line-height: 1.3;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             text-align: start;
             width: 300px;
         }
@@ -223,14 +195,59 @@
         .hero_image img {
             max-width: 180px;
             position: relative;
-            right: 15%;
-            top: 40%;
+            right: 75px;
+            top: 100%;
+            z-index: -10;
+            
         }
         .fundo {
-            margin-top: 30%;
+            margin-top: 0%;
         }
     
+    /*Sobre*/
 
+    #sobre{
+        margin-top: 15%;
+    }
+    .about {
+        font-size: 15px;
+        margin-right: 10px;
+        margin-top: 3%;
+        z-index: 8;
+        text-align: justify;
+    }
+    .about h2 {
+        font-size: 1.7rem;
+        margin-bottom: 2px;
+        position: relative;
+        bottom: 5%;
+    }
+
+    .about p {
+        font-size: 10px;
+        text-align: start;
+        line-height: 1.2em;
+        margin-bottom: 20px;
+        align-items: start;
+        width: 90%;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+/*Skills*/
+
+.habilidade {
+    width: 100%;
+    margin-bottom: 20%;
+
+}
+
+#skills {
+    margin-top: 10%;
+    background-image: url(../imagem/pexeus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
     
     }
 }
