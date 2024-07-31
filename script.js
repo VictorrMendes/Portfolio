@@ -1,3 +1,40 @@
+const button_menu = document.querySelector('.btn_menu');
+const button_ul = document.querySelector('.menuMobile ul');
+const menuNav = document.querySelector('.menuNav img');
+
+button_ul.addEventListener('click', function () {
+  const menu = document.querySelector('.menuMobile');
+
+  if (menu.style.display === 'none' || menu.style.display === '') {
+    menu.style.display = 'block';
+    menuNav.style.transform = 'rotate(90deg)';
+
+  } else {
+    menu.style.display = 'none';
+    menuNav.style.transform = 'rotate(180deg)';
+  }
+
+})
+
+button_menu.addEventListener('click', function () {
+  const menu = document.querySelector('.menuMobile');
+  
+  if (menu.style.display === 'none' || menu.style.display === '') {
+    menu.style.display = 'block';
+    menuNav.style.transform = 'rotate(90deg)';
+  } else {
+    menu.style.display = 'none';
+    menuNav.style.transform = 'rotate(180deg)';
+  }
+})
+
+
+
+
+
+
+
+
 const downloadButton = document.querySelector('#butao');
 const box = document.querySelector('.box');
 

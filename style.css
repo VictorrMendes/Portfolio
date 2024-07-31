@@ -165,10 +165,10 @@ body {
     position: relative;
     left: 6%;
     display: none;
-    background-image: linear-gradient(2deg, #0ff30f, #8787877d);
+    background-image: linear-gradient(2deg, #9446dd, #8787877d);
     border: solid 1px #01e0572d;
     animation: pular 1s infinite;
-    box-shadow: rgb(0 233 63 / 29%) 2px 3px 20px, rgba(236, 230, 230, 0.12) -20px 3px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(241, 236, 236, 0.17) 0px 12px 13px, rgba(221, 217, 217, 0.09) 0px -3px 5px;
+    box-shadow: rgba(120, 0, 233, 0.29) 2px 3px 20px, rgba(236, 230, 230, 0.12) -20px 3px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(241, 236, 236, 0.17) 0px 12px 13px, rgba(221, 217, 217, 0.09) 0px -3px 5px;
     opacity: 0;
     border-top: none;
 }
@@ -289,13 +289,13 @@ body {
 /*Skills*/
 
 .habilidade {
-    width: 10%;
-    margin-bottom: 10%;
+    width: 100%;
+    margin-bottom: 20%;
 
 }
 
 #skills {
-    margin-top: 20%;
+    margin-top: 10%;
     background-image: url(./imagem/pexeus.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -539,4 +539,7 @@ footer a:hover {
     height: 100%;
     z-index: 8;
     pointer-events: none;
+}
+.menuNav {
+    display: none;
 }

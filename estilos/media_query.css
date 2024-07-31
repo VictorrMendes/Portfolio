@@ -26,7 +26,7 @@
 
     .menu_items li a {
         margin-left: 20px;
-        font-size: 12px;
+        font-size: 7px;
     }
 
     .logo {
@@ -97,42 +97,46 @@
     }
 
     .box {
-        width: 80px;
+        width: 20px;
         left: 15%;
     }
 
     .fundo {
         margin-top: 20%;
     }
-    .btn{
+
+    .btn {
         z-index: 5;
     }
-    
-/*aprestação*/
 
-.sidebar {
-    width:  auto;
-    max-width: 80px;
-    max-height: 200px;
-    padding: 30px;
-    border-radius: 20px;
-    right: 0%;
-    margin-top: 40%;
-}
-.sidebar img {
-    max-width: 80px;
-    border-radius: 50%;
-    margin-bottom: 5px;
-}
-.sidebar p{
-    text-align: center;
-    font-size: 14px;
-}
-.social-links {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-}
+    /*aprestação*/
+
+    .sidebar {
+        width: auto;
+        max-width: 80px;
+        max-height: 200px;
+        padding: 30px;
+        border-radius: 20px;
+        right: 0%;
+        margin-top: 40%;
+    }
+
+    .sidebar img {
+        max-width: 80px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+    }
+
+    .sidebar p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
 
 
 
@@ -141,24 +145,81 @@
             padding-top: 30%;
         }
 
-        .menu_items li a {
-            margin-left: 15px;
-            font-size: 13px;
+        .navbar {
+            height: 20px;
         }
 
         .menu_items {
-            margin-right: 3%;
+            display: none;
         }
 
+        .menuNav {
+            position: absolute;
+            right: 5px;
+            top: 0%;
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+            position: fixed;
+        }
+
+        .menuNav img {
+            width: 15px;
+            height: auto;
+
+        }
+
+        .menuNav button {
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+            right: 0;
+            position: absolute;
+        }
+
+        .menuMobile ul {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            padding-bottom: 1rem;
+            background-color: #480e5a;
+            opacity: 90%;
+            border-radius: 10px;
+            margin-top: 27px;
+        }
+
+        .menuMobile {
+            display: none;
+        }
+
+
+
+        .menu_item li {
+            margin-right: 20px;
+        }
+
+        .menu_item li a {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .menu_item li a:hover {
+            color: #622edb;
+            text-decoration: underline;
+        }
+
+
         .logo {
-            font-size: 1.4rem;
+            font-size: 1rem;
             margin-left: 5%;
-            width: 7ch;
+            width: 14ch;
         }
 
         .box {
-            width: 80px;
-            left: 15%;
+            width: 50px;
+            left: 20%;
         }
 
         .fundo {
@@ -175,7 +236,7 @@
             position: relative;
             bottom: 30%;
             margin-right: 0;
-            
+
         }
 
         .hero_content p {
@@ -198,56 +259,167 @@
             right: 75px;
             top: 100%;
             z-index: -10;
-            
+
         }
+
         .fundo {
             margin-top: 0%;
         }
-    
-    /*Sobre*/
 
-    #sobre{
-        margin-top: 15%;
-    }
-    .about {
-        font-size: 15px;
-        margin-right: 10px;
-        margin-top: 3%;
-        z-index: 8;
-        text-align: justify;
-    }
-    .about h2 {
-        font-size: 1.7rem;
-        margin-bottom: 2px;
-        position: relative;
-        bottom: 5%;
-    }
+        /*Sobre*/
 
-    .about p {
-        font-size: 10px;
-        text-align: start;
-        line-height: 1.2em;
-        margin-bottom: 20px;
-        align-items: start;
-        width: 90%;
-        margin-left: 10px;
-        margin-bottom: 20px;
-    }
-/*Skills*/
+        #sobre {
+            margin-top: 0%;
+        }
 
-.habilidade {
-    width: 100%;
-    margin-bottom: 20%;
+        .about {
+            font-size: 15px;
+            margin-right: 10px;
+            margin-top: 3%;
+            z-index: 8;
+            text-align: justify;
+        }
 
-}
+        .about h2 {
+            font-size: 1.7rem;
+            margin-bottom: 2px;
+            position: relative;
+            bottom: 5%;
+        }
 
-#skills {
-    margin-top: 10%;
-    background-image: url(../imagem/pexeus.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-    
+        .about p {
+            font-size: 10px;
+            text-align: start;
+            line-height: 1.2em;
+            margin-bottom: 20px;
+            align-items: start;
+            width: 90%;
+            margin-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        /*Skills*/
+
+        .habilidade {
+            width: 100%;
+            margin-bottom: 20%;
+
+        }
+
+        #skills {
+            margin-top: 10%;
+            background-image: url(../imagem/pexeus.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .habilidade h2 {
+            text-align: center;
+            margin-bottom: 10%;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            margin-top: 15%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill {
+
+            margin: 0 20px;
+            text-align: center;
+            margin-top: 10%;
+        }
+
+        .skill img {
+            max-width: 30px;
+            margin-bottom: 10px;
+        }
+
+        .bar {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress_base {
+            width: 80px;
+            height: 5px;
+            background-color: #ddd;
+            bottom: 0;
+            left: 0;
+        }
+
+        .progress_html {
+            width: 0%;
+            height: 5px;
+            background-color: #425bca;
+            animation: progress-bar-html 5s infinite forwards;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .progress_css {
+            width: 0%;
+            height: 5px;
+            background-color: #425bca;
+            animation: progress-bar-css 5s infinite forwards;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .progress_js {
+            width: 0%;
+            height: 5px;
+            background-color: #425bca;
+            animation: progress-bar-js 5s infinite forwards;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .progress_vs {
+            width: 0%;
+            height: 5px;
+            background-color: #425bca;
+            animation: progress-bar-vs 5s infinite forwards;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .progress_gt {
+            width: 0%;
+            height: 5px;
+            background-color: #425bca;
+            animation: progress-bar-gt 5s infinite forwards;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .progress_excell {
+            width: 0%;
+            height: 5px;
+            background-color: #425bca;
+            animation: progress-bar-excell 5s infinite forwards;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        #contato {
+            font-size: 13px;
+        }
+
+        footer {
+            font-size: 12px;
+        }
     }
 }
