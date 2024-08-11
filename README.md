@@ -5,7 +5,7 @@
 Sou um entusiasta apaixonado por tecnologia embarcando na jornada como Desenvolvedor. Atualmente, estou dedicado aos estudos na faculdade de Ciências da Computação, sonhando com a realização de projetos grandiosos e conquistas significativas. Estou constantemente buscando novos conhecimentos para aplicar em prática, impulsionando assim o meu crescimento pessoal e profissional.
 
 ### ![retomar](https://github.com/user-attachments/assets/da6450dd-bc45-420f-9b01-f311f49231c9) Portfolio:
-*  [victor-mendes.netlify.app](victor-mendes.netlify.app)
+*  https://victor-mendes.netlify.app
 
 👨‍🎓Formação Acadêmica:
 
