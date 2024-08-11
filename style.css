@@ -404,6 +404,8 @@ body {
     align-items: center;
     left: 5%;
     position: relative;
+    display: flex;
+    flex-direction: column;
 
 }
 
