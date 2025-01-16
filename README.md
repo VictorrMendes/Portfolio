@@ -7,7 +7,7 @@ Bem-vindo ao meu portfólio! Sou Victor Mendes de Souza, um entusiasta da tecnol
 ### ![retomar](https://github.com/user-attachments/assets/da6450dd-bc45-420f-9b01-f311f49231c9) Portfolio:
 *  https://victor-mendes.netlify.app
   
-###  ![alt text](linkedin.png) LinkedIn:
+### ![linkedin](https://github.com/user-attachments/assets/f2f9aaf7-816a-4d06-8e85-454c58bc9c3e) LinkedIn:
 *  [Victor Mendes/](https://www.linkedin.com/in/victor-mendes-de-souza-728270234/)
 
 👨‍🎓Formação Acadêmica:
