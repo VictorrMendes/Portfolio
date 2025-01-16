@@ -1,0 +1,85 @@
+@keyframes progress-bar-html {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes progress-bar-css {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes progress-bar-js {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes progress-bar-gt {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes progress-bar-vs {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes progress-bar-excell {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 73%;
+  }
+}
+
+@keyframes pular {
+  0% {
+    transform: translateY(7%);
+  }
+
+  50% {
+    transform: translateY(-2%);
+  }
+
+  100% {
+    transform: translateY(7%);
+  }
+}
+
+@keyframes animaMarcador {
+  50% {
+    border-right: transparent;
+  }
+}
+
+@keyframes animatext {
+  0% {
+    width: 0;
+  }
+}
