@@ -2,7 +2,7 @@
 
 body {
     font-family: "Roboto Mono", monospace, sans-serif;
-    background-color: #181818;
+    background-color: #1f1e1e;
     color: #fff;
     margin: 0;
     padding: 0;
@@ -402,97 +402,133 @@ body {
 
 /*Projetos*/
 
-.laboratorio {
-    width: 90%;
-    height: 70%;
-    align-items: center;
-    left: 5%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.laboratorio h2 {
+/* Seção de Projetos */
+.section {
+    padding: 50px 20px;
     text-align: center;
 }
-.about h3{
+
+.projects-content {
     text-align: start;
-    font-size: 1.5rem;
 }
 
-.laboratorio h3 {
-    text-align: center;
+/* Título */
+.projects-content h2 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+
+}
+
+/* Container com Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajustável */
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cartão do Projeto */
+.project-box {
+    perspective: 1000px;
+    width: 100%;
+    max-width: 250px;
+    height: 320px;
+    margin: auto;
     margin-top: 10%;
 }
 
-.laboratorio-list {
-    display: flex;
-    margin-top: 20px;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    gap: 15px;
-    display: flex;
+/* Efeito Flip */
+.project-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
 }
 
-.laboratorio-list::-webkit-scrollbar {
-    display: none;
+.project-box:hover .project-inner {
+    transform: rotateY(180deg);
 }
 
-.laboratorio-item {
-    background-color: #282828;
-    padding: 20px;
+/* Estilo dos lados do cartão */
+.project-front, .project-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
     border-radius: 10px;
-    text-align: center;
-    width: 30%;
-    object-fit: contain;
-    min-height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;/
-}
-
-.laboratorio-item p {
-    text-align: justify;
-    font-size: 1vw;
-    margin-bottom: 20%;
-    text-align: justify;
-    font-size: 0.8rem;
-    margin-bottom: 20px;/
-}
-
-
-
-.laboratorio-item img {
-    max-width: 100%;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    height: 40%;
-}
-
-.laboratorio-item img:hover {
-    transform: scale(1.2);
-}
-
-.ferramentas {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10px;
-    gap: 10px;
+    align-items: center;
+    padding: 15px;
+
 }
 
-.ferramentas span {
-    background-color: #383838;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 0 5px;
-    font-size: 0.8rem;
-    object-fit: contain;
-    display: flexbox;
-    box-sizing: border-box;
+/* Frente do cartão */
+.project-front {
+    background-color: rgba(88, 82, 99, 0.137);
+    color: black;
 }
+
+.project-img {
+    width: 90%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.Ferramentas {
+    font-size: 0.9em;
+    color: #9284d1c0;
+}
+
+/* Verso do cartão */
+.project-back {
+    background: linear-gradient(180deg, #2b1457 0%, #a879ff 100%);
+
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+.project-back h4 {
+    margin: 0;
+}
+
+.project-back p {
+    margin-top: 3px;
+    font-size: 0.7em;
+    padding: 5px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.link_projetc {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: white;
+    color: #6c32a1;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.link_projetc:hover {
+    background-color: #4f3b96;
+    color: white;
+}
+
+
+
 /*contato*/
 #contato {
     align-items: center;

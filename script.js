@@ -38,10 +38,6 @@ button_menu.addEventListener('click', function () {
 const downloadButton = document.querySelector('#butao');
 const box = document.querySelector('.box');
 
-//lamapada
-const lamp = document.querySelector('#lamp img')
-const semafaro = document.querySelector('#semafaro_img')
-
 //botão
 downloadButton.addEventListener('mouseover', function baixar() {
   box.style.display = 'block';
@@ -50,34 +46,6 @@ downloadButton.addEventListener('mouseout', function baixar() {
   box.style.display = 'none';
 },);
 
-//eventos
-
-// lampada
-lamp.addEventListener('mouseover', acender);
-lamp.addEventListener('mouseout', apagar);
-
-//semafaro
-semafaro.addEventListener('mouseout', vermelho);
-
-semafaro.addEventListener('mouseover', verde);
-
-//funções
-
-//função lampada
-function acender() {
-  lamp.src = "./imagem/lampOn.jpeg"
-}
-function apagar() {
-  lamp.src = "./imagem/lampOff.jpeg"
-}
-
-//função semafaro
-function verde() {
-  semafaro.src = "./imagem/luz(1).jpeg";
-}
-function vermelho() {
-  semafaro.src = "./imagem/luz(3).jpeg"
-}
 
 //particulas
 
