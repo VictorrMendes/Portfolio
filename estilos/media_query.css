@@ -428,12 +428,72 @@
         }
 
 
+        
         /*Projetos*/
-            .projects-grid {
-                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            }
+        .projects-grid {
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        }
 
+        /*Projetos*/
 
+        /* Título */
+        .projects-content h2 {
+            font-size: 0.7rem;
+            margin-bottom: 5px;
+
+        }
+        .project-back h4 {
+            font-size: 10px;
+        }
+
+        /* Container com Grid */
+        .projects-grid {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        /* Cartão do Projeto */
+        .project-box {
+            width: 80%;
+            max-width: 250px;
+            height: 270px;
+            margin-top: 10%;
+        }
+
+        /* Efeito Flip */
+        .project-inner {
+            width: 80%;
+            height: 80%;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 50%;
+        }
+
+        .project-title {
+            font-size: 0.9em;
+            margin: 3px 0;
+        }
+
+        .Ferramentas {
+            font-size: 0.6em;
+        }
+
+        /* Verso do cartão */
+        .project-back p {
+            margin-top: 1px;
+            font-size: 7px;
+            padding: 3px;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        .link_projetc {
+            font-size: 10px;
+            margin-top: 5px;
+            padding: 3px 5px;
+        }
 
     }
 }

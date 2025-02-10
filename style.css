@@ -487,12 +487,12 @@ body {
 
 .Ferramentas {
     font-size: 0.9em;
-    color: #9284d1c0;
+    color: #b3a3f3c0;
 }
 
 /* Verso do cartão */
 .project-back {
-    background: linear-gradient(180deg, #2b1457 0%, #a879ff 100%);
+    background: linear-gradient(180deg, #2b1457 0%, #5d4092 100%);
 
     color: white;
     transform: rotateY(180deg);
@@ -571,10 +571,6 @@ footer a:hover {
     color: #00b0ff;
     text-decoration: underline;
 
-}
-
-#particles-js {
-    position: absolute;
 }
 
 #particles-js {
