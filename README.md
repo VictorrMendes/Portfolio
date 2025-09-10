@@ -21,7 +21,6 @@ Bem-vindo ao meu portfólio! Sou Victor Mendes de Souza, um entusiasta da tecnol
 - JavaScript
 - Python
 - React
-- SAP
 - Excel
 
 🧑‍💻Objetivos Profissionais:
