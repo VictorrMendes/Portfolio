@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* --- Tailwind v4 Utilities --- */
+
+@utility font-pixel {
+  font-family: var(--font-press-start), monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@utility font-terminal {
+  font-family: var(--font-vt323), monospace;
+  font-size: 1.25rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility neon-border {
+  border: 2px solid #a855f7;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.5), inset 0 0 10px rgba(168, 85, 247, 0.2);
+}
+
+@utility neon-text {
+  text-shadow: 0 0 8px rgba(168, 85, 247, 0.8);
+}
+
+@utility pixel-corners {
+  clip-path: polygon(
+    0px 4px, 4px 4px, 4px 0px, 
+    calc(100% - 4px) 0px, calc(100% - 4px) 4px, 100% 4px, 
+    100% calc(100% - 4px), calc(100% - 4px) calc(100% - 4px), calc(100% - 4px) 100%, 
+    4px 100%, 4px calc(100% - 4px), 0px calc(100% - 4px)
+  );
+}
+
+/* Garante que imagens Pixel Art fiquem nítidas (sem blur) */
+@utility pixelated {
+  image-rendering: pixelated; /* Padrão moderno */
+  image-rendering: crisp-edges; /* Fallback */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #09030f;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Scrollbar estilizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #09030f;
+}
+::-webkit-scrollbar-thumb {
+  background: #a855f7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8A2BE2;
 }
