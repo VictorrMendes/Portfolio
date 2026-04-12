@@ -98,7 +98,7 @@ const projectsData = [
     shortDesc: "Landing page corporativa focada em conversão, portfólio de obras e alta velocidade.",
     tech: ["Next.js 16", "React 19", "Tailwind 4"],
     image: "/projects/predserv.png",
-    link: "https://github.com/VictorrMendes/Predserv",
+    link: "https://predservengenharia.com.br/",
     content: (
       <div className="space-y-4 md:space-y-6 text-gray-300 font-sans text-base md:text-lg leading-relaxed">
         <p>Site Empresarial desenvolvido para cliente real (Predserv Engenharia & Reformas Civis), com foco em apresentação de serviços, prova social e captação de contatos.</p>
@@ -117,7 +117,7 @@ const projectsData = [
     shortDesc: "Landing page Empresarial em React com formulário de orçamento dinâmico.",
     tech: ["React 17", "Bootstrap", "EmailJS", "Slick"],
     image: "/projects/amazonasfilms.png",
-    link: "https://github.com/VictorrMendes/AmazonasFilms",
+    link: "https://amazonas-films.com/",
     content: (
       <div className="space-y-4 md:space-y-6 text-gray-300 font-sans text-base md:text-lg leading-relaxed">
         <p>Landing page Empresarial da Amazonas Filmes e Adesivos, desenvolvida em React, com foco em apresentação de serviços, galeria de projetos, depoimentos e formulário de contato para solicitação de orçamentos.</p>
