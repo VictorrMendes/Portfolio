@@ -16,7 +16,7 @@ Aqui você encontrará a minha evolução técnica: de páginas dinâmicas e des
 ## 🔗 Links Importantes
 
 ### 🌐 **Portfólio Online:**
-* [victor-mendes.netlify.app](https://victor-mendes.netlify.app)
+* [victor-mendes.netlify.app](https://victorvm.vercel.app/)
 
 ### 💼 **LinkedIn:**
 * [Victor Mendes](https://www.linkedin.com/in/victor-mendes-de-souza-728270234/)
