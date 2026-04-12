@@ -11,13 +11,13 @@ const softSkillsData = [
     Icon: Users, 
     s: "Equipe", 
     c: "text-pink-400", 
-    desc: "Capacidade de trabalhar bem em grupo, valorizando a colaboração e o respeito mútuo para alcançar objetivos comuns." 
+    desc: "Trabalho bem em equipe, valorizando a colaboração e o respeito mútuo para alcançar objetivos comuns." 
   },
   { 
     Icon: Rocket, 
     s: "Proativo", 
     c: "text-purple-300", 
-    desc: "Iniciativa para antecipar problemas, buscar soluções e assumir responsabilidades sem precisar de microgerenciamento." 
+    desc: "Sempre tomo a iniciativa para antecipar problemas, buscar soluções e assumir responsabilidades sem precisar de microgerenciamento." 
   },
   { 
     Icon: Target, 
