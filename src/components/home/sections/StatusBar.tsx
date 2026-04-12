@@ -16,7 +16,7 @@ const StatusBar = () => (
         rel="noreferrer"
         className="group flex w-max items-center gap-2 font-pixel text-[10px] text-white hover:text-purple-300 hover:neon-text sm:text-xs"
       >
-        [GH] GITHUB PROFILE <span className="transition-transform group-hover:translate-x-1">→</span>
+        GITHUB PROFILE <span className="transition-transform group-hover:translate-x-1">→</span>
       </a>
 
       <div className="flex w-full flex-col items-start gap-6 font-terminal text-lg sm:flex-row sm:items-center sm:gap-8">

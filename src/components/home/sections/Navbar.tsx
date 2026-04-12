@@ -32,8 +32,8 @@ const Navbar = () => {
           <ul className="flex items-center space-x-5 border-r border-purple-900 pr-6 py-1">
             <li onClick={() => scrollToSection('home')} className="cursor-pointer text-purple-400 hover:text-white hover:neon-text transition-colors">[ HOME ]</li>
             <li onClick={() => scrollToSection('sobre')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">SOBRE</li>
-            <li onClick={() => scrollToSection('projetos')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">PROJETOS</li>
             <li onClick={() => scrollToSection('skills')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">SKILLS</li>
+            <li onClick={() => scrollToSection('projetos')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">PROJETOS</li>
             <li onClick={() => scrollToSection('rota')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">ROTA</li>
           </ul>
           <div className="flex items-center gap-4 text-white text-xs">
@@ -59,10 +59,11 @@ const Navbar = () => {
         <div className="md:hidden mt-2 flex flex-col items-center gap-4 neon-border pixel-corners bg-[#150a21]/95 p-5 backdrop-blur-lg shadow-[0_0_20px_rgba(168,85,247,0.3)] animate-in fade-in slide-in-from-top-2">
           
           <ul className="flex flex-col items-center space-y-5 w-full border-b border-purple-900 pb-5 text-[10px]">
-            <li className="cursor-pointer text-purple-400 hover:text-white hover:neon-text transition-colors" onClick={() => scrollToSection('home')}>[ HOME ]</li>
-            <li className="cursor-pointer hover:text-white hover:neon-text transition-colors" onClick={() => scrollToSection('sobre')}>SOBRE</li>
-            <li className="cursor-pointer hover:text-white hover:neon-text transition-colors" onClick={() => scrollToSection('projetos')}>PROJETOS</li>
-            <li className="cursor-pointer hover:text-white hover:neon-text transition-colors" onClick={() => scrollToSection('skills')}>SKILLS</li>
+                        <li onClick={() => scrollToSection('home')} className="cursor-pointer text-purple-400 hover:text-white hover:neon-text transition-colors">[ HOME ]</li>
+            <li onClick={() => scrollToSection('sobre')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">SOBRE</li>
+            <li onClick={() => scrollToSection('skills')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">SKILLS</li>
+            <li onClick={() => scrollToSection('projetos')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">PROJETOS</li>
+            <li onClick={() => scrollToSection('rota')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">ROTA</li>
           </ul>
 
           <div className="flex justify-center gap-6 text-white text-[10px] w-full pt-1">

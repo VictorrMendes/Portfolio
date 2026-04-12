@@ -20,13 +20,15 @@ const Hero = () => (
       <p className="mx-auto mb-10 max-w-2xl font-terminal text-xl leading-relaxed text-gray-200 md:text-2xl lg:mx-0">
         Embarcando na emocionante jornada como programador. Focado no desenvolvimento Front-end, dominando tecnologias modernas como JavaScript e React para moldar experiências digitais nítidas.
       </p>
-      <motion.button
+      <motion.a
+        href="/Currculo_Victor_Mendes_Desenvolvedor.pdf"
+        download
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className="neon-border pixel-corners group relative inline-block bg-[#8A2BE2]/20 px-10 py-5 font-pixel text-sm text-white transition-colors hover:bg-[#8A2BE2]/60 hover:shadow-[0_0_25px_#8A2BE2]"
       >
         [ PRESS START / INICIAR JORNADA ]
-      </motion.button>
+      </motion.a>
     </motion.div>
 
     <motion.div

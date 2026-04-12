@@ -5,23 +5,25 @@
 
 ## 🚀 Sobre Mim
 
-Bem-vindo ao meu portfólio! Sou **Victor Mendes de Souza**, desenvolvedor Frontend com experiência em **React**, **JavaScript** e desenvolvimento de interfaces modernas. Atualmente trabalho na **Next Rental** como Analista de Operações, onde desenvolvo automações e interfaces que otimizam processos empresariais.
+Bem-vindo ao meu portfólio! Sou **Victor Mendes de Souza**, um desenvolvedor apaixonado por criar soluções que unem interfaces modernas e automações de alto impacto. Atualmente trabalho na **Next Rental** como Analista de Operações, onde desenvolvo integrações e interfaces que otimizam processos empresariais.
 
-Minha paixão é criar experiências digitais intuitivas e funcionais, combinando design responsivo com código limpo e eficiente. Aqui você encontrará projetos que demonstram minha evolução como desenvolvedor Frontend!
+Embora minha base sólida seja em **Frontend (React, JS)**, sou um grande entusiasta da cultura **Self-Hosted, DevOps e Inteligência Artificial**. Adoro o desafio de transformar recursos limitados em arquiteturas poderosas — como orquestrar servidores caseiros integrados a LLMs.
+
+Aqui você encontrará a minha evolução técnica: de páginas dinâmicas e design responsivo até automações complexas com bots e APIs.
 
 ---
 
 ## 🔗 Links Importantes
 
-### ![retomar](https://github.com/user-attachments/assets/da6450dd-bc45-420f-9b01-f311f49231c9) **Portfólio Online:**
-*  [victor-mendes.netlify.app](https://victor-mendes.netlify.app)
+### 🌐 **Portfólio Online:**
+* [victor-mendes.netlify.app](https://victor-mendes.netlify.app)
 
-### ![linkedin](https://github.com/user-attachments/assets/ba6279a0-e80b-4766-a5e8-719013c9574c) **LinkedIn:**
-*  [Victor Mendes](https://www.linkedin.com/in/victor-mendes-de-souza-728270234/)
+### 💼 **LinkedIn:**
+* [Victor Mendes](https://www.linkedin.com/in/victor-mendes-de-souza-728270234/)
 
 ---
 
-## 🎓 **Formação & Certificações Frontend**
+## 🎓 **Formação & Certificações**
 
 **Graduação:**
 - **Ciências da Computação** - Universidade Anhembi Morumbi (2024-2028)
@@ -33,47 +35,53 @@ Minha paixão é criar experiências digitais intuitivas e funcionais, combinand
 - **Django: Templates e boas práticas** - Alura (2025)
 - **Git e GitHub** - DIO (2025)
 
-## 💻 **Stack Frontend**
+---
 
-**Core Technologies:**
-- **JavaScript (ES6+)** - Desenvolvimento moderno
-- **React.js** - Biblioteca para interfaces
-- **HTML5 & CSS3** - Estrutura e estilização
-- **Git/GitHub** - Versionamento de código
+## 💻 **Minha Stack**
 
-**Ferramentas & Design:**
-- **Figma** - Prototipagem e design
-- **Responsive Design** - Mobile-first approach
-- **DOM Manipulation** - JavaScript vanilla
+**Frontend & Design:**
+- **JavaScript (ES6+) & React.js** - Desenvolvimento de interfaces dinâmicas
+- **HTML5 & CSS3** - Estruturação e design responsivo (Mobile-first)
+- **Figma** - Prototipagem e UX/UI
 
-**Complementares:**
-- **Django Templates** - Backend integration
-- **Linux** - Ambiente de desenvolvimento
-- **Docker** - Containerização
+**DevOps, Automação & Infraestrutura:**
+- **Docker & Portainer** - Containerização e orquestração de serviços
+- **n8n** - Automação de fluxos complexos e integrações API REST
+- **Linux & SSH** - Administração de servidores e scripts bash
+- **Cloudflare (Zero Trust)** - Segurança de redes e túneis de exposição
+
+**Integrações & IA:**
+- **Groq API (Llama 3)** - Implementação de LLMs e Processamento de Linguagem Natural
+- **Python & Django** - Backend e scripts de automação
+- **Webhooks & APIs REST** - Comunicação entre microsserviços
+
+---
 
 ## 🌟 **Projetos em Destaque**
 
+- 🤖 **VMSERVER: AI-Powered Home Lab** *(Destaque)*
+  - Arquitetura Self-Hosted rodando em hardware legado (Celeron).
+  - Criação de um Assistente Pessoal no Telegram orquestrado via **n8n**.
+  - Roteamento de intenção com IA (Groq) para diagnosticar o servidor via SSH, gerenciar containers no Docker e criar notas nativas via API (Blinko).
+  - Exposição segura via Cloudflare Tunnels.
+
 - 🏢 **Site Empresarial de E-commerce**
-  - React Native com infraestrutura completa
-  - Configuração de domínio, DNS e email comercial
-  - Design responsivo e otimizado para conversão
+  - Aplicação React Native com infraestrutura completa.
+  - Configuração de domínio, DNS e email comercial.
+  - Design responsivo e otimizado para conversão.
 
-- 💻 **Plataforma de Vendas Personalizadas**
-  - HTML5, CSS3 e JavaScript
-  - Interface focada em UX/UI
-  - Sistema de navegação intuitivo
+- ⚙️ **Interface para Automação Interna**
+  - Interface web integrada com Python.
+  - Redução de 80% no tempo de processos operacionais na Next Rental.
+  - Design focado na experiência do usuário (UX).
 
-- 🤖 **Interface para Automação**
-  - Python + Interface web
-  - Redução de 80% no tempo de processos
-  - Design centrado no usuário
+---
 
-## 🎯 **Foco Profissional Frontend**
+## 🎯 **Foco Profissional Atual**
 
-- Especializar em **React.js** e ecossistema moderno
-- Desenvolver expertise em **UX/UI Design** e acessibilidade
-- Criar **componentes reutilizáveis** e bibliotecas próprias
-- Dominar **performance optimization** e boas práticas
+- Aprofundar expertise no ecossistema **React.js** e componentes escaláveis.
+- Desenvolver arquiteturas híbridas unindo **Frontend** a fluxos de **Automação (n8n/IA)**.
+- Dominar boas práticas de segurança, performance e consumo de APIs complexas.
 
 ---
 
@@ -87,10 +95,10 @@ Minha paixão é criar experiências digitais intuitivas e funcionais, combinand
 
 ---
 
-<h2 align="center">⚒️ Frontend Stack ⚒️</h2>
+<h2 align="center">⚒️ Tech Stack ⚒️</h2>
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=javascript,react,html,css,git,github,figma,vscode" />
+  <img src="https://skillicons.dev/icons?i=javascript,react,html,css,git,github,figma,docker,linux,python" />
 </div>
 
 ---
@@ -110,6 +118,6 @@ Minha paixão é criar experiências digitais intuitivas e funcionais, combinand
 
 <h1 align="center">
   
-  [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=7638F7&random=false&width=500&lines=Pronto+para+criar+interfaces+incr%C3%ADveis+%21+%F0%9F%9A%80)](https://git.io/typing-svg)
+  [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=7638F7&random=false&width=600&lines=Transformando+c%C3%B3digo+em+solu%C3%A7%C3%B5es+inteligentes!+%F0%9F%9A%80)](https://git.io/typing-svg)
   
 </h1>

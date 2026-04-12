@@ -1,59 +1,147 @@
+"use client";
+
 import { motion } from "framer-motion";
 import Contacts from "./Contacts";
 
+// ==========================================
+// DADOS DA TIMELINE (Baseado no seu PDF)
+// ==========================================
+const timelineData = [
+  {
+    category: "Educação",
+    year: "2024 - 2028",
+    title: "Ciência da Computação",
+    subtitle: "Universidade Anhembi Morumbi",
+    list: []
+  },
+  {
+    category: "Certificações",
+    year: "2025",
+    title: "",
+    subtitle: "",
+    list: [
+      { name: "React / JavaScript", date: "2025" },
+      { name: "Python / Django", date: "2025" },
+      { name: "Linux Professional", date: "2025" },
+      { name: "Git e GitHub", date: "2025" },
+      { name: "Arquitetura de Redes", date: "2025" }
+    ]
+  },
+  {
+    category: "Experiência",
+    year: "2024 - Atual",
+    title: "Analista de Operações",
+    subtitle: "Next Rental (Operação FIAT)",
+    list: [
+      { name: "Automação com Python", date: "" },
+      { name: "Gestão no sistema SAP", date: "" }
+    ]
+  },
+  {
+    category: "Experiência",
+    year: "2023 - Atual",
+    title: "Dev. Freelancer",
+    subtitle: "Autônomo",
+    list: [
+      { name: "Desenvolvimento React", date: "" },
+      { name: "Portfólios e E-commerces", date: "" },
+      { name: "Infraestrutura Web", date: "" }
+    ]
+  },
+  {
+    category: "Experiência",
+    year: "05/2022 - 10/2024",
+    title: "Auxiliar Logístico",
+    subtitle: "Palácio Dos Leilões",
+    list: [
+      { name: "Coordenação de Setor", date: "" },
+      { name: "Relacionamento B2B", date: "" }
+    ]
+  }
+];
+
 const Timeline = () => {
   return (
-    <div  className="mt-20 mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12">
-      <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-        <h2 id="rota" className="font-pixel mb-10 text-xl text-white">TRAJETÓRIA / REGISTROS</h2>
-
-        <div className="relative border-l-2 border-purple-600 ml-3 pl-8 pb-4 space-y-10">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="relative">
-            <div className="absolute -left-10.25 top-1 h-4 w-4 rounded-full border-4 border-[#09030f] bg-purple-500 shadow-[0_0_10px_#a855f7]"></div>
-
-            <div className="flex items-center justify-between mb-1 w-full max-w-sm">
-              <h3 className="font-pixel text-sm text-purple-400">Education</h3>
-              <span className="font-pixel text-xs text-purple-600">2024</span>
-            </div>
-            <p className="font-terminal text-xl text-white">Ciência da Computação</p>
-            <p className="font-terminal text-lg text-gray-400">Anhembi Morumbi</p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="relative"
-          >
-            <div className="absolute -left-10.25 top-1 h-4 w-4 rounded-full border-4 border-[#09030f] bg-purple-500 shadow-[0_0_10px_#a855f7]"></div>
-
-            <h3 className="font-pixel text-sm text-purple-400 mb-3">Certificações</h3>
-            <ul className="font-terminal text-lg text-gray-300 space-y-2 max-w-sm">
-              <li className="flex justify-between">
-                <span>React</span> <span className="text-purple-600">2025</span>
-              </li>
-              <li className="flex justify-between">
-                <span>JavaScript</span> <span className="text-purple-600">2025</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Django</span> <span className="text-purple-600">2025</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Python</span> <span className="text-purple-600">2025</span>
-              </li>
-              <li className="flex justify-between">
-                <span>Git e GitHub</span> <span className="text-purple-600">2025</span>
-              </li>
-            </ul>
-          </motion.div>
-        </div>
+    <div className="mt-20 mb-20 w-full max-w-5xl mx-auto">
+      
+      {/* Cabeçalho */}
+      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+        <h2 id="rota" className="font-pixel mb-12 md:mb-16 text-2xl md:text-3xl text-white text-left md:text-center">
+          TRAJETÓRIA / REGISTROS
+        </h2>
       </motion.div>
 
+      {/* Container da Árvore */}
+      <div className="relative w-full pb-8">
+        
+        {/* Linha Central */}
+        <div className="absolute left-[15px] md:left-1/2 top-0 bottom-0 w-[2px] bg-purple-900/50 transform -translate-x-1/2"></div>
+
+        {timelineData.map((item, index) => {
+          const isLeft = index % 2 === 0;
+
+          return (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ delay: index * 0.15 }}
+              // Ajuste Aqui: Trocado mb-16 por mb-8 no mobile e mb-12 no desktop
+              className={`relative flex items-start mb-8 md:mb-12 ${isLeft ? 'md:flex-row-reverse' : 'md:flex-row'} flex-row`}
+            >
+              {/* O Nó (Ponto na Linha) */}
+              <div className="absolute left-[15px] md:left-1/2 mt-1.5 w-4 h-4 rounded-full border-2 border-purple-500 bg-[#09030f] flex items-center justify-center z-10 shadow-[0_0_10px_#a855f7] transform -translate-x-1/2">
+                <div className="w-1.5 h-1.5 bg-purple-400 rounded-full"></div>
+              </div>
+
+              {/* Linha Conectora Horizontal (PC) */}
+              <div className={`hidden md:block absolute mt-[13px] w-12 h-[2px] bg-purple-800/80 ${isLeft ? 'right-1/2' : 'left-1/2'}`}></div>
+
+              {/* Linha Conectora Horizontal (Celular) */}
+              <div className="md:hidden absolute left-[15px] mt-[13px] w-[25px] h-[2px] bg-purple-800/80"></div>
+
+              {/* Espaçador Fantasma */}
+              <div className="hidden md:block w-1/2"></div>
+
+              {/* Bloco de Conteúdo */}
+              <div className={`w-full md:w-1/2 ${isLeft ? 'md:pr-12 md:text-right text-left pl-10 md:pl-0' : 'pl-10 md:pl-12 text-left'}`}>
+
+                <div className={`flex flex-wrap items-center gap-2 md:gap-4 mb-4 ${isLeft ? 'md:flex-row-reverse' : 'flex-row'}`}>
+                  <h3 className={`font-pixel text-lg md:text-2xl text-purple-400 border-purple-600 ${isLeft ? 'md:border-r-2 md:pr-3 md:border-l-0 border-l-2 pl-3 md:pl-0' : 'border-l-2 pl-3'}`}>
+                    {item.category}
+                  </h3>
+                  <span className="font-pixel text-sm md:text-base text-purple-600">{item.year}</span>
+                </div>
+
+                <div className="font-terminal text-gray-300">
+                  {item.title && <p className="text-xl md:text-2xl text-white mb-1 font-bold">{item.title}</p>}
+                  {item.subtitle && <p className="text-base md:text-lg text-gray-400 mb-4">{item.subtitle}</p>}
+
+                  {item.list && item.list.length > 0 && (
+                    <ul className="space-y-2 mt-4">
+                      {item.list.map((li, i) => (
+                        <li key={i} className={`flex justify-between w-full md:w-4/5 ${isLeft ? 'md:ml-auto md:flex-row-reverse' : 'mr-auto'} gap-4 border-b border-purple-900/30 pb-1`}>
+                          <span className="text-base md:text-lg text-gray-300">{li.name}</span>
+                          {/* Impede que itens sem data fiquem estranhos */}
+                          {li.date && <span className="text-sm md:text-base text-purple-500/70 whitespace-nowrap">{li.date}</span>}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </div>
+            </motion.div>
+          );
+        })}
+      </div>
+
+      <div className="mt-20 md:mt-32">
         <Contacts />
+      </div>
+
     </div>
   );
-  
 };
 
 export default Timeline;
