@@ -32,10 +32,7 @@ const Footer = () => {
   return (
     <footer className="relative mt-12 border-t-4 border-purple-900/50 bg-[#09030f]/80 pt-12 pb-8 backdrop-blur-md z-20">
       <div className="mx-auto max-w-7xl px-4 md:px-12 lg:px-20">
-        
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row md:items-start">
-          
-          {/* Lado Esquerdo: Info */}
           <div className="flex flex-col items-center md:items-start gap-4 text-center md:text-left">
             <div className="flex items-center gap-3 cursor-pointer" onClick={scrollToTop}>
               <span className="w-2 h-2 bg-purple-500 animate-pulse"></span>
@@ -46,18 +43,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Centro: Tech Stack Log */}
-          <div className="flex flex-col items-center md:items-start gap-3">
-            <h3 className="font-pixel text-[10px] text-purple-400">SYSTEM.LOG // STACK</h3>
-            <ul className="font-terminal text-gray-500 text-base space-y-1">
-              <li>{">"} Framework: Next.js 15</li>
-              <li>{">"} Styling: Tailwind CSS</li>
-              <li>{">"} Motion: Framer Motion</li>
-              <li>{">"} Icons: Native SVG</li>
-            </ul>
-          </div>
-
-          {/* Lado Direito: Social Links e Topo */}
           <div className="flex flex-col items-center md:items-end gap-6">
             <div className="flex gap-4">
               <motion.a 
@@ -107,7 +92,6 @@ const Footer = () => {
 
         </div>
 
-        {/* Linha Final: Copyright */}
         <div className="mt-12 pt-6 border-t border-purple-900/30 flex flex-col sm:flex-row justify-between items-center gap-4 font-terminal text-gray-600 text-sm">
           <p>© {new Date().getFullYear()} Victor Mendes de Souza. All rights reserved.</p>
           <p>PLAYER 1 READY_</p>

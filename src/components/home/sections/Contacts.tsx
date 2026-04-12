@@ -40,9 +40,7 @@ const Contacts = () => {
 
   return (
     <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-      <h2 className="font-pixel mb-2 text-xl text-white">Modo Co-op</h2>
-      <p className="font-terminal text-gray-400 mb-6 text-sm">Inicie uma conexão direta. [Mensagem = ON]</p>
-
+      <h2 className="font-pixel mb-2 text-xl text-white">Modo Cooperative</h2>
       <div className="neon-border pixel-corners bg-[#150a21]/50 p-6 backdrop-blur-sm">
         <form ref={form} onSubmit={sendEmail} className="space-y-4">
           <input 

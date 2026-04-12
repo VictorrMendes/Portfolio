@@ -2,10 +2,8 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-// Importando os ícones da biblioteca Lucide
 import { Users, Rocket, Target, MessageSquare } from "lucide-react";
 
-// Trocamos a chave "t" (texto) por "Icon" (Componente)
 const softSkillsData = [
   { 
     Icon: Users, 

@@ -4,9 +4,6 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-// ==========================================
-// DADOS DOS PROJETOS (Formatados como READMEs)
-// ==========================================
 const projectsData = [
   {
     title: "VMSERVER: Home Lab",
@@ -15,7 +12,6 @@ const projectsData = [
     image: "/projects/servidor.png",
     link: "https://github.com/VictorrMendes/HomeLab",
     content: (
-      // Trocado para font-sans e ajustado o tamanho para uma leitura agradável
       <div className="space-y-4 md:space-y-6 text-gray-300 font-sans text-base md:text-lg leading-relaxed">
         <p>Transformando um notebook Positivo (com processador Celeron) no cérebro de uma casa inteligente. Uma arquitetura 100% Self-Hosted, orquestrada por fluxos automatizados e Inteligência Artificial.</p>
         
@@ -140,9 +136,6 @@ const projectsData = [
   }
 ];
 
-// ==========================================
-// COMPONENTE PRINCIPAL
-// ==========================================
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<typeof projectsData[0] | null>(null);
 
@@ -185,9 +178,7 @@ const Projects = () => {
               </div>
 
               <div className="p-6 md:p-8 flex flex-col flex-grow">
-                {/* Título do Card na Tela Principal */}
                 <h3 className="mb-4 font-pixel text-base md:text-xl lg:text-2xl text-white group-hover:text-purple-400 transition-colors">{project.title}</h3>
-                {/* O resumo nos cards da tela inicial permanece em font-terminal para manter a vibe do site */}
                 <p className="mb-6 font-terminal text-base md:text-lg lg:text-xl text-gray-400 flex-grow leading-relaxed">{project.shortDesc}</p>
                 
                 <div className="flex flex-wrap gap-2 md:gap-3 mt-auto">
