@@ -1,11 +1,6 @@
-<!-- HEADER -->
-<div align="center">
-
 <div align="center">
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=9d4edd&height=120&section=header&text=VICTOR%20MENDES&fontSize=36&fontColor=ffffff&fontAlignY=45&desc=Frontend%20Developer%20%7C%20Player%201%20Ready_&descSize=14&descAlignY=70&descColor=c77dff&animation=fadeIn)
-
-</div>
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&pause=1000&color=9D4EDD&center=true&width=500&lines=Frontend+Developer+%F0%9F%92%BB;Self-Hosted+Enthusiast+%F0%9F%96%A5%EF%B8%8F;Gamer+%7C+Pixel+Art+Lover+%F0%9F%8E%AE;PLAYER+1+READY_)](https://git.io/typing-svg)
 
@@ -15,16 +10,16 @@
 
 ## `// ABOUT THE PLAYER`
 
-{ A mente analítica de um logístico, com o coração criativo de um desenvolvedor }
+Minha jornada começou na logística, onde aprendi a lidar com processos, otimização e análise de dados. Sempre fui movido por desafios e pela busca por eficiência, o que naturalmente me levou ao desenvolvimento web e à automação de processos.
 
-Minha jornada começou na logística, onde aprendi a lidar com processos, otimização e análise de dados. Sempre fui movido por desafios e pela busca por eficiência, o que naturalmente me levou ao desenvolvimento web, software e à automação de processos.
+Hoje trabalho na **Next Rental** como Analista de Operações, desenvolvendo automações e interfaces que otimizam processos empresariais. Em paralelo, trabalho como freelancer **Front-End (React, Next.js, TypeScript)** e na construção de integrações sólidas no **Back-End (Python, Django)**.
 
-
-Hoje, minha paixão pela tecnologia me guia no aprimoramento contínuo de habilidades em desenvolvimento web, front-end e back-end, criando soluções funcionais. Trabalho com React, HTML, CSS, JavaScript, utilizo Python e Django para construir sistemas back-end.
+Sou também um entusiasta de **Self-Hosted, DevOps e Inteligência Artificial** — tenho um Home Lab rodando 24/7 orquestrando automações com IA local, e acho esse tipo de desafio tão viciante quanto zerar um jogo difícil.
 
 Cresci jogando RPG e pixel art. Não é à toa que meu portfólio tem cara de videogame dos anos 90. **Cada projeto é uma quest. Cada stack, um item no inventário.**
 
 🌐 **Portfólio:** [vmstorm.com.br](https://www.vmstorm.com.br)
+💼 **LinkedIn:** [Victor Mendes de Souza](https://www.linkedin.com/in/victor-mendes-de-souza-728270234/)
 
 ---
 
@@ -36,8 +31,11 @@ Cresci jogando RPG e pixel art. Não é à toa que meu portfólio tem cara de vi
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
 **Backend**
 
@@ -50,10 +48,10 @@ Cresci jogando RPG e pixel art. Não é à toa que meu portfólio tem cara de vi
 ![n8n](https://img.shields.io/badge/n8n-EA4560?style=flat-square&logo=n8n&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Groq](https://img.shields.io/badge/Groq_·_Llama_3-9D4EDD?style=flat-square&logoColor=white)
 
 ---
-
 
 
 ## `// FORMAÇÃO · CERTS`
@@ -62,11 +60,21 @@ Cresci jogando RPG e pixel art. Não é à toa que meu portfólio tem cara de vi
 |-------|-------------|-----|
 | 🎓 Ciência da Computação | Universidade Anhembi Morumbi | 2024 → 2028 |
 | ⚛️ React: Desenvolvendo com JavaScript | Alura | 2025 |
+| 🌐 Imersão Front-End 2ª Edição | Alura | 2025 |
 | 📜 JavaScript: Construindo páginas dinâmicas | Alura | 2025 |
 | 🐍 Django: Templates e boas práticas | Alura | 2025 |
 | 🌿 Git e GitHub | DIO | 2025 |
 | 🐧 Linux Professional | Certificação | 2025 |
-| 🌐 Arquitetura de Redes | Certificação | 2025 |
+| 🔌 Arquitetura de Redes | Certificação | 2025 |
+
+---
+
+## `// FOCO PROFISSIONAL`
+
+- Aprofundar expertise no ecossistema **React.js** e componentes escaláveis
+- Desenvolver arquiteturas híbridas unindo **Front-End** a fluxos de **Automação (n8n / IA)**
+- Evoluir em **UX/UI Design**, acessibilidade e performance optimization
+- Dominar boas práticas de segurança e consumo de **APIs complexas**
 
 ---
 
@@ -88,5 +96,7 @@ Cresci jogando RPG e pixel art. Não é à toa que meu portfólio tem cara de vi
 <div align="center">
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&pause=1000&color=9D4EDD&center=true&width=500&lines=Transformando+c%C3%B3digo+em+experi%C3%AAncias+digitais.;vmstorm.com.br+%7C+PLAYER+1+READY_)](https://git.io/typing-svg)
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=9d4edd&height=80&section=footer)
 
 </div>
