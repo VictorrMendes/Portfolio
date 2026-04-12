@@ -17,8 +17,6 @@ body {
 
 }
 
-/*Barra de Navegação*/
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -68,8 +66,6 @@ body {
     color: #622edb;
     text-decoration: underline;
 }
-
-/*Começo da apresentação*/
 
 .hero {
     background: rgb(31,30,30);
@@ -159,8 +155,6 @@ body {
     text-decoration: underline;
 }
 
-/*Botão do hover*/
-
 .box {
     text-align: center;
     padding: 15px;
@@ -194,13 +188,10 @@ body {
     color: #fff;
 }
 
-/*Fundo do sobre*/
 .fundo {
     background-color: #2828282d;
     width: 100%;
 }
-
-/*Sobre*/
 
 #sobre {
     margin-top: 4%;
@@ -229,8 +220,6 @@ body {
     align-items: start;
     width: 80%;
 }
-
-/*aprestação*/
 
 .sidebar {
     width: auto;
@@ -290,8 +279,6 @@ body {
 #bnt_lab {
     margin-top: 15px;
 }
-
-/*Skills*/
 
 .habilidade {
     width: 100%;
@@ -401,9 +388,6 @@ body {
     left: 0;
 }
 
-/*Projetos*/
-
-/* Seção de Projetos */
 .section {
     padding: 50px 20px;
     text-align: center;
@@ -413,22 +397,19 @@ body {
     text-align: start;
 }
 
-/* Título */
 .projects-content h2 {
     font-size: 1rem;
     margin-bottom: 5px;
 
 }
 
-/* Container com Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajustável */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-content: center;
 }
 
-/* Cartão do Projeto */
 .project-box {
     perspective: 1000px;
     width: 100%;
@@ -438,7 +419,6 @@ body {
     margin-top: 10%;
 }
 
-/* Efeito Flip */
 .project-inner {
     width: 100%;
     height: 100%;
@@ -451,7 +431,6 @@ body {
     transform: rotateY(180deg);
 }
 
-/* Estilo dos lados do cartão */
 .project-front, .project-back {
     width: 100%;
     height: 100%;
@@ -467,7 +446,6 @@ body {
 
 }
 
-/* Frente do cartão */
 .project-front {
     background-color: rgba(88, 82, 99, 0.137);
     color: black;
@@ -491,7 +469,6 @@ body {
     color: #b3a3f3c0;
 }
 
-/* Verso do cartão */
 .project-back {
     background: linear-gradient(180deg, #2b1457 0%, #5d4092 100%);
 
@@ -529,8 +506,6 @@ body {
 }
 
 
-
-/*contato*/
 #contato {
     align-items: center;
     display: flex;

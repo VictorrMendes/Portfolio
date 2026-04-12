@@ -155,7 +155,7 @@ const Projects = () => {
     <>
       <motion.div id="projetos" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-20">
         <h2 className="mb-8 flex items-center gap-3 font-pixel text-lg md:text-2xl text-white">
-          <span className="h-6 md:h-8 w-2 bg-purple-600"></span>QUESTS CONCLUÍDAS
+          <span className="h-6 md:h-8 w-2 bg-purple-600"></span>QUESTS CONCLUIAS
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

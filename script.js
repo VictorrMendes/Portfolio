@@ -38,16 +38,12 @@ button_menu.addEventListener('click', function () {
 const downloadButton = document.querySelector('#butao');
 const box = document.querySelector('.box');
 
-//botão
 downloadButton.addEventListener('mouseover', function baixar() {
   box.style.display = 'block';
 },);
 downloadButton.addEventListener('mouseout', function baixar() {
   box.style.display = 'none';
 },);
-
-
-//particulas
 
 particlesJS("particles-js", {
   "particles": {

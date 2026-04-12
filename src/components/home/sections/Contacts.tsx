@@ -77,7 +77,6 @@ const Contacts = () => {
             {isSubmitting ? "ENVIANDO..." : "SEND"}
           </motion.button>
 
-          {/* Feedback Visual */}
           {status === "success" && (
             <p className="font-terminal text-green-400 text-lg text-center mt-2">Mensagem enviada com sucesso! Logo retornarei o contato.</p>
           )}
