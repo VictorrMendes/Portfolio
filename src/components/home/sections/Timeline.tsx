@@ -28,7 +28,7 @@ const timelineData = [
     category: "Experiência",
     year: "2024 - Atual",
     title: "Analista de Operações",
-    subtitle: "Next Rental (Operação FIAT)",
+    subtitle: "Next Rental (Frotas)",
     list: [
       { name: "Automação com Python", date: "" },
       { name: "Gestão de Frotas", date: "" }
