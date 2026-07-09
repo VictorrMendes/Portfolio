@@ -1,8 +1,14 @@
 import { motion } from "framer-motion";
 
 import GithubGraph from "./GithubGraph";
+import { SITE } from "@/content/site";
+import type { GithubStats } from "@/lib/github";
 
-const StatusBar = () => (
+type StatusBarProps = {
+  githubStats: GithubStats | null;
+};
+
+const StatusBar = ({ githubStats }: StatusBarProps) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -11,7 +17,7 @@ const StatusBar = () => (
   >
     <div className="flex w-full flex-col gap-6 xl:w-auto">
       <a
-        href="https://github.com/VictorrMendes"
+        href={SITE.github}
         target="_blank"
         rel="noreferrer"
         className="group flex w-max items-center gap-2 font-pixel text-[10px] text-white hover:text-purple-300 hover:neon-text sm:text-xs"
@@ -24,7 +30,7 @@ const StatusBar = () => (
           <div className="flex min-w-max flex-col items-start">
             <div className="flex items-center gap-2">
               <span className="font-pixel text-[10px] text-purple-400">Level</span>
-              <span className="font-pixel text-2xl text-white sm:text-3xl">54</span>
+              <span className="font-pixel text-2xl text-white sm:text-3xl">{githubStats?.publicRepos ?? "—"}</span>
             </div>
             <span className="mt-1 font-pixel text-[8px] text-gray-500">(Repositórios)</span>
           </div>
@@ -32,7 +38,7 @@ const StatusBar = () => (
           <div className="flex min-w-max flex-col items-start">
             <div className="flex items-center gap-2">
               <span className="font-pixel text-[10px] text-purple-400">Exp</span>
-              <span className="font-pixel text-2xl text-white sm:text-3xl">250+</span>
+              <span className="font-pixel text-2xl text-white sm:text-3xl">{githubStats ? `${githubStats.totalContributions}+` : "—"}</span>
             </div>
             <span className="mt-1 font-pixel text-[8px] text-gray-500">(Contrib.)</span>
           </div>
@@ -40,17 +46,17 @@ const StatusBar = () => (
 
         <div className="flex w-full flex-row justify-between gap-4 border-t border-purple-900/50 pt-4 sm:w-auto sm:flex-col sm:justify-center sm:gap-2 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0">
           <div className="min-w-max text-gray-300">
-            Following: <span className="ml-1 font-pixel text-base text-white sm:text-lg">16</span>
+            Following: <span className="ml-1 font-pixel text-base text-white sm:text-lg">{githubStats?.following ?? "—"}</span>
           </div>
           <div className="min-w-max text-gray-300">
-            Followers: <span className="ml-1 font-pixel text-base text-white sm:text-lg">4</span>
+            Followers: <span className="ml-1 font-pixel text-base text-white sm:text-lg">{githubStats?.followers ?? "—"}</span>
           </div>
         </div>
       </div>
     </div>
 
     <div className="[-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden w-full max-w-full overflow-x-auto pb-2 xl:w-auto">
-      <GithubGraph />
+      <GithubGraph weeks={githubStats?.weeks ?? []} />
     </div>
   </motion.div>
 );
