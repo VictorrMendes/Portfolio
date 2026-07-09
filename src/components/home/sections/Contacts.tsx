@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { SITE } from "@/content/site";
 
 const Contacts = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -70,7 +71,7 @@ const Contacts = () => {
             whileTap={{ scale: 0.98 }}
             type="submit"
             disabled={isSubmitting}
-            className={`w-full rounded py-3 font-pixel text-white text-sm shadow-[0_0_15px_rgba(168,85,247,0.5)] transition-all ${
+            className={`w-full rounded py-3 font-pixel text-white text-sm transition-all ${
               isSubmitting ? "bg-purple-800 cursor-not-allowed" : "bg-[#a855f7] hover:bg-purple-500"
             }`}
           >
@@ -87,13 +88,13 @@ const Contacts = () => {
       </div>
 
       <div className="flex gap-6 mt-6 font-pixel text-[10px] text-purple-300">
-        <a href="https://www.linkedin.com/in/victor-mendes-de-souza-728270234/" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+        <a href={SITE.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
           <span className="w-3 h-3 bg-purple-700 inline-block rounded-sm"></span> LinkedIn
         </a>
-        <a href="https://github.com/VictorrMendes" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+        <a href={SITE.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
           <span className="w-3 h-3 bg-purple-700 inline-block rounded-full"></span> GitHub
         </a>
-        <a href="https://wa.me/5531998186472" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+        <a href={SITE.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
           <span className="w-3 h-3 bg-purple-700 inline-block rotate-45"></span> WhatsApp
         </a>
       </div>

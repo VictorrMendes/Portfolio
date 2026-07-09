@@ -1,9 +1,10 @@
 import { MetadataRoute } from 'next';
+import { SITE } from '@/content/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://www.vmstorm.com.br/', 
+      url: SITE.url,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,

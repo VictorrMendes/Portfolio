@@ -2,60 +2,7 @@
 
 import { motion } from "framer-motion";
 import Contacts from "./Contacts";
-
-const timelineData = [
-  {
-    category: "Educação",
-    year: "2024 - 2028",
-    title: "Ciência da Computação",
-    subtitle: "Universidade Anhembi Morumbi",
-    list: []
-  },
-  {
-    category: "Certificações",
-    year: "2025",
-    title: "",
-    subtitle: "",
-    list: [
-      { name: "React / JavaScript", date: "2025" },
-      { name: "Python / Django", date: "2025" },
-      { name: "Linux Professional", date: "2025" },
-      { name: "Git e GitHub", date: "2025" },
-      { name: "Arquitetura de Redes", date: "2025" }
-    ]
-  },
-  {
-    category: "Experiência",
-    year: "2024 - Atual",
-    title: "Analista de Operações",
-    subtitle: "Next Rental (Frotas)",
-    list: [
-      { name: "Automação com Python", date: "" },
-      { name: "Gestão de Frotas", date: "" }
-    ]
-  },
-  {
-    category: "Experiência",
-    year: "2023 - Atual",
-    title: "Dev. Freelancer",
-    subtitle: "Autônomo",
-    list: [
-      { name: "Desenvolvimento React", date: "" },
-      { name: "Portfólios e E-commerces", date: "" },
-      { name: "Infraestrutura Web", date: "" }
-    ]
-  },
-  {
-    category: "Experiência",
-    year: "05/2022 - 10/2024",
-    title: "Auxiliar Logístico",
-    subtitle: "Palácio Dos Leilões",
-    list: [
-      { name: "Coordenação de Setor", date: "" },
-      { name: "Relacionamento B2B", date: "" }
-    ]
-  }
-];
+import { timeline as timelineData } from "@/content/timeline";
 
 const Timeline = () => {
   return (
@@ -81,7 +28,7 @@ const Timeline = () => {
               transition={{ delay: index * 0.15 }}
               className={`relative flex items-start mb-8 md:mb-12 ${isLeft ? 'md:flex-row-reverse' : 'md:flex-row'} flex-row`}
             >
-              <div className="absolute left-[15px] md:left-1/2 mt-1.5 w-4 h-4 rounded-full border-2 border-purple-500 bg-[#09030f] flex items-center justify-center z-10 shadow-[0_0_10px_#a855f7] transform -translate-x-1/2">
+              <div className="absolute left-[15px] md:left-1/2 mt-1.5 w-4 h-4 rounded-full border-2 border-purple-500 bg-[#09030f] flex items-center justify-center z-10 transform -translate-x-1/2">
                 <div className="w-1.5 h-1.5 bg-purple-400 rounded-full"></div>
               </div>
 

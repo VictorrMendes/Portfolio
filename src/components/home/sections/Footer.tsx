@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowUp } from "lucide-react";
+import { SITE } from "@/content/site";
 
 
 const GithubIcon = () => (
@@ -48,7 +49,7 @@ const Footer = () => {
               <motion.a 
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://github.com/VictorrMendes" 
+                href={SITE.github}
                 target="_blank" 
                 rel="noreferrer"
                 className="neon-border pixel-corners flex items-center justify-center p-2 bg-[#150a21] text-purple-400 hover:bg-purple-900/50 hover:text-white transition-colors"
@@ -58,7 +59,7 @@ const Footer = () => {
               <motion.a 
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://www.linkedin.com/in/victor-mendes-de-souza-728270234/" 
+                href={SITE.linkedin}
                 target="_blank" 
                 rel="noreferrer"
                 className="neon-border pixel-corners flex items-center justify-center p-2 bg-[#150a21] text-purple-400 hover:bg-purple-900/50 hover:text-white transition-colors"
@@ -68,7 +69,7 @@ const Footer = () => {
               <motion.a 
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://wa.me/5531998186472" 
+                href={SITE.whatsapp}
                 target="_blank" 
                 rel="noreferrer"
                 className="neon-border pixel-corners flex items-center justify-center p-2 bg-[#150a21] text-purple-400 hover:bg-purple-900/50 hover:text-white transition-colors"
