@@ -4,7 +4,7 @@ const PersonJsonLd = () => {
   const json = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Victor Mendes de Souza",
+    name: SITE.name,
     jobTitle: SITE.jobTitle,
     url: SITE.url,
     sameAs: [SITE.github, SITE.linkedin],

@@ -1,8 +1,8 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=9d4edd&height=120&section=header&text=VICTOR%20MENDES&fontSize=36&fontColor=ffffff&fontAlignY=45&desc=Frontend%20Developer%20%7C%20Player%201%20Ready_&descSize=14&descAlignY=70&descColor=c77dff&animation=fadeIn)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=9d4edd&height=120&section=header&text=VICTOR%20MENDES&fontSize=36&fontColor=ffffff&fontAlignY=45&desc=Fullstack%20Developer%20%7C%20Player%201%20Ready_&descSize=14&descAlignY=70&descColor=c77dff&animation=fadeIn)
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&pause=1000&color=9D4EDD&center=true&width=500&lines=Frontend+Developer+%F0%9F%92%BB;Self-Hosted+Enthusiast+%F0%9F%96%A5%EF%B8%8F;Gamer+%7C+Pixel+Art+Lover+%F0%9F%8E%AE;PLAYER+1+READY_)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Share+Tech+Mono&pause=1000&color=9D4EDD&center=true&width=500&lines=Fullstack+Developer+%F0%9F%92%BB;Infra+%26+Automation+Engineer+%F0%9F%96%A5%EF%B8%8F;Gamer+%7C+Pixel+Art+Lover+%F0%9F%8E%AE;PLAYER+1+READY_)](https://git.io/typing-svg)
 
 </div>
 
@@ -10,9 +10,9 @@
 
 ## `// ABOUT THE PLAYER`
 
-Minha jornada começou na logística, onde aprendi a lidar com processos, otimização e análise de dados. Sempre fui movido por desafios e pela busca por eficiência, o que naturalmente me levou ao desenvolvimento web e à automação de processos.
+Me chamo Victor, tenho 25 anos, atualmente cursando Ciência da Computação. Sou um apaixonado pela tecnologia em si, desde hardware ao software, das peças à funcionalidade da tela. Trago para o código uma visão sistêmica focada em resolver problemas reais.
 
-Hoje trabalho na **Next Rental** como Analista de Operações, desenvolvendo automações e interfaces que otimizam processos empresariais. Em paralelo, trabalho como freelancer **Front-End (React, Next.js, TypeScript)** e na construção de integrações sólidas no **Back-End (Python, Django)**.
+Hoje trabalho na **Franq** (fintech) como Analista Desenvolvedor Fullstack, atuando em sistemas **React/Next.js** (frontend) e **Python/Django** (backend), com monitoramento de logs **AWS** e integração de APIs de terceiros. Antes disso, passei pela **Next Rental/Mills** como Analista de Operações, onde desenvolvi automações Python e um app fullstack de controle de frotas usado na operação real.
 
 Sou também um entusiasta de **Self-Hosted, DevOps e Inteligência Artificial** — tenho um Home Lab rodando 24/7 orquestrando automações com IA local, e acho esse tipo de desafio tão viciante quanto zerar um jogo difícil.
 
@@ -41,9 +41,11 @@ Cresci jogando RPG e pixel art. Não é à toa que meu portfólio tem cara de vi
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
 **DevOps · Infra · Automação**
 
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![n8n](https://img.shields.io/badge/n8n-EA4560?style=flat-square&logo=n8n&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
@@ -71,10 +73,10 @@ Cresci jogando RPG e pixel art. Não é à toa que meu portfólio tem cara de vi
 
 ## `// FOCO PROFISSIONAL`
 
-- Aprofundar expertise no ecossistema **React.js** e componentes escaláveis
-- Desenvolver arquiteturas híbridas unindo **Front-End** a fluxos de **Automação (n8n / IA)**
-- Evoluir em **UX/UI Design**, acessibilidade e performance optimization
-- Dominar boas práticas de segurança e consumo de **APIs complexas**
+- Atuar como **Fullstack** em projetos de alto impacto (fintech, bancário)
+- Integrar infraestrutura **cloud (AWS)** com desenvolvimento web
+- Construir sistemas com arquitetura limpa, testes e boas práticas de segurança
+- Continuar evoluindo no ecossistema **Next.js + TypeScript + Python/Django**
 
 ---
 

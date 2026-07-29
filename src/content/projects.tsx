@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { SITE } from "@/content/site";
 
 export type Project = {
   title: string;
@@ -12,7 +13,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "VMSERVER: Home Lab",
-    shortDesc: "Transformando um notebook Celeron no cérebro de uma casa inteligente. Arquitetura 100% Self-Hosted.",
+    shortDesc: "19 containers Docker orquestrando automação com IA (Llama 3), IoT, monitoramento Grafana e n8n. Tudo rodando em um notebook reaproveitado.",
     tech: ["Docker", "Linux", "n8n", "Llama 3", "Tailscale"],
     image: "/projects/servidor.png",
     link: "https://github.com/VictorrMendes/HomeLab",
@@ -37,7 +38,7 @@ export const projects: Project[] = [
   },
   {
     title: "FinanceVM (PWA)",
-    shortDesc: "App de gestão financeira pessoal estilo Private Bank. Instalável com gráficos dinâmicos.",
+    shortDesc: "PWA financeiro com dashboard de ativos, análise gráfica e agenda de pagamentos. Next.js 15 + TypeScript + Django. Deploy na Vercel.",
     tech: ["Next.js 15", "TypeScript", "Tailwind v4", "Django"],
     image: "/projects/financeVM.png",
     link: "https://myfinances-self.vercel.app",
@@ -55,6 +56,26 @@ export const projects: Project[] = [
 
         <h4 className="text-purple-400 font-pixel text-base md:text-2xl lg:text-3xl mt-8 md:mt-12 mb-3 md:mb-5">🚀 O Código</h4>
         <p>Desenvolvido com foco em mobile-first e alta performance. O Frontend utiliza Next.js com App Router e Tailwind CSS, consumindo uma API REST privada e segura construída em Django.</p>
+      </div>
+    ),
+  },
+  {
+    title: "Oracle-Fin",
+    shortDesc: "Plataforma fullstack de análise financeira integrando Brapi, Yahoo Finance e OpenFinData. Autenticação JWT, alertas configuráveis, Docker Compose.",
+    tech: ["React", "TypeScript", "Python", "Django", "PostgreSQL"],
+    image: "/projects/oracle.jpg",
+    link: SITE.github,
+    content: (
+      <div className="space-y-4 md:space-y-6 text-gray-300 font-sans text-base md:text-lg leading-relaxed">
+        <p>Plataforma fullstack de análise financeira que integra múltiplas fontes de dados de mercado (Brapi, Yahoo Finance, OpenFinData) para consolidar cotações, indicadores e finanças pessoais em um só lugar.</p>
+
+        <h4 className="text-purple-400 font-pixel text-base md:text-2xl lg:text-3xl mt-8 md:mt-12 mb-3 md:mb-5">⚙️ Detalhes Técnicos</h4>
+        <ul className="list-disc pl-5 space-y-2 md:space-y-3">
+          <li><strong className="text-white">Autenticação:</strong> Login seguro via JWT com fluxo de refresh token.</li>
+          <li><strong className="text-white">Alertas Configuráveis:</strong> Notificações customizadas por ativo e indicador financeiro.</li>
+          <li><strong className="text-white">Infraestrutura:</strong> Docker Compose orquestrando API, banco de dados e serviços auxiliares.</li>
+          <li><strong className="text-white">Stack:</strong> Frontend em React + TypeScript consumindo uma API REST em Python/Django com PostgreSQL.</li>
+        </ul>
       </div>
     ),
   },

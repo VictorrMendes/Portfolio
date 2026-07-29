@@ -50,6 +50,7 @@ const Timeline = () => {
                 <div className="font-terminal text-gray-300">
                   {item.title && <p className="text-xl md:text-2xl text-white mb-1 font-bold">{item.title}</p>}
                   {item.subtitle && <p className="text-base md:text-lg text-gray-400 mb-4">{item.subtitle}</p>}
+                  {item.description && <p className="text-base md:text-lg text-gray-300 mb-4 leading-relaxed">{item.description}</p>}
 
                   {item.list && item.list.length > 0 && (
                     <ul className="space-y-2 mt-4">

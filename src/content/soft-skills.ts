@@ -1,5 +1,5 @@
 import type { ElementType } from "react";
-import { Users, Rocket, Target, MessageSquare } from "lucide-react";
+import { Puzzle, Workflow, Server, GraduationCap } from "lucide-react";
 
 export type SoftSkill = {
   Icon: ElementType;
@@ -10,27 +10,27 @@ export type SoftSkill = {
 
 export const softSkills: SoftSkill[] = [
   {
-    Icon: Users,
-    s: "Equipe",
+    Icon: Puzzle,
+    s: "Problem-Solving",
     c: "text-pink-400",
-    desc: "Trabalho bem em equipe, valorizando a colaboração e o respeito mútuo para alcançar objetivos comuns.",
+    desc: "Gosto de mergulhar em problemas complexos, quebrar em partes menores e encontrar a solução mais elegante, seja no código ou na infraestrutura.",
   },
   {
-    Icon: Rocket,
-    s: "Proativo",
+    Icon: Workflow,
+    s: "Automação",
     c: "text-purple-300",
-    desc: "Sempre tomo a iniciativa para antecipar problemas, buscar soluções e assumir responsabilidades sem precisar de microgerenciamento.",
+    desc: "Enxergo tarefas repetitivas como oportunidades de automação — do bot que economiza tempo real no trabalho aos fluxos que rodam sozinhos no meu Home Lab.",
   },
   {
-    Icon: Target,
-    s: "Dedicado",
+    Icon: Server,
+    s: "Self-Hosted",
     c: "text-orange-500",
-    desc: "Alto nível de foco e comprometimento com as entregas, buscando sempre a excelência e a qualidade no código.",
+    desc: "Gerencio minha própria infraestrutura (Docker, Linux, redes) rodando serviços 24/7, sem depender de nuvens de terceiros.",
   },
   {
-    Icon: MessageSquare,
-    s: "Comunicativo",
+    Icon: GraduationCap,
+    s: "Aprendizado",
     c: "text-green-400",
-    desc: "Habilidade de expressar ideias técnicas de forma clara, ouvir ativamente e manter o alinhamento com stakeholders.",
+    desc: "Trato cada stack nova, cada bug difícil e cada certificação como um novo nível a subir — aprender é parte do jogo.",
   },
 ];
