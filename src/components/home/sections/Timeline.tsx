@@ -9,7 +9,7 @@ const Timeline = () => {
     <div className="mt-20 mb-20 w-full max-w-5xl mx-auto">
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
         <h2 id="rota" className="font-pixel mb-12 md:mb-16 text-2xl md:text-3xl text-white text-left md:text-center">
-          TRAJETÓRIA / REGISTROS
+          TRAJETORIA / REGISTROS
         </h2>
       </motion.div>
 
@@ -50,6 +50,7 @@ const Timeline = () => {
                 <div className="font-terminal text-gray-300">
                   {item.title && <p className="text-xl md:text-2xl text-white mb-1 font-bold">{item.title}</p>}
                   {item.subtitle && <p className="text-base md:text-lg text-gray-400 mb-4">{item.subtitle}</p>}
+                  {item.description && <p className="text-base md:text-lg text-gray-300 mb-4 leading-relaxed">{item.description}</p>}
 
                   {item.list && item.list.length > 0 && (
                     <ul className="space-y-2 mt-4">

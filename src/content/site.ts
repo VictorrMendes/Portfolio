@@ -1,7 +1,7 @@
 export const SITE = {
-  name: "Victor Mendes",
+  name: "Victor Mendes de Souza",
   url: "https://www.vmstorm.com.br",
-  jobTitle: "Desenvolvedor Front-End",
+  jobTitle: "Fullstack Developer & Infra Engineer",
   tagline: "Transformando lógica em experiências digitais.",
   email: "victo.mendes.souza@gmail.com",
   whatsapp: "https://wa.me/5531998186472",

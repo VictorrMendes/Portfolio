@@ -3,10 +3,20 @@ export type TimelineItem = {
   year: string;
   title: string;
   subtitle: string;
+  description?: string;
   list: { name: string; date: string }[];
 };
 
 export const timeline: TimelineItem[] = [
+  {
+    category: "Experiência",
+    year: "Jun 2026 - Presente",
+    title: "Analista Desenvolvedor Fullstack",
+    subtitle: "Franq (Fintech)",
+    description:
+      "Debug e melhorias em sistemas React/Next.js (frontend) e Python/Django (backend). Monitoramento de logs AWS, integração com APIs de terceiros e desenvolvimento de novos projetos internos.",
+    list: [],
+  },
   {
     category: "Educação",
     year: "2024 - 2028",
@@ -29,9 +39,11 @@ export const timeline: TimelineItem[] = [
   },
   {
     category: "Experiência",
-    year: "2024 - Atual",
+    year: "Nov 2024 - Mai 2026",
     title: "Analista de Operações",
-    subtitle: "Next Rental (Frotas)",
+    subtitle: "Next Rental / Mills",
+    description:
+      "Desenvolvi um app fullstack de controle de frotas (Next.js + Django) usado na operação real. Dashboards Power BI para KPIs gerenciais. Desenvolvi bot de automação Python que reduziu abertura de OS de 15min para 3min.",
     list: [
       { name: "Automação com Python", date: "" },
       { name: "Gestão de Frotas", date: "" },

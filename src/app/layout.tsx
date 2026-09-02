@@ -19,17 +19,17 @@ const vt323 = VT323({
 });
 
 export const metadata: Metadata = {
-  title: 'Victor Mendes | Desenvolvedor Front-End & Automação',
-  description: 'Portfólio de Victor Mendes de Souza. Desenvolvedor Front-End especializado em React, Next.js, TypeScript, Python e infraestrutura (Docker/n8n).',
+  title: 'Victor Mendes | Fullstack Developer & Infra Engineer',
+  description: 'Portfólio de Victor Mendes de Souza. Fullstack Developer especializado em React, Next.js, TypeScript, Python, Django e infraestrutura (Docker/AWS/n8n).',
   keywords: [
     'Victor Mendes',
     'Victor Mendes de Souza',
-    'Desenvolvedor Front-End',
+    'Fullstack Developer',
     'React',
     'Next.js',
     'Portfólio Victor Mendes',
     'Desenvolvedor Juatuba',
-    'Programador Front-End'
+    'Desenvolvedor Fullstack'
   ],
   authors: [{ name: 'Victor Mendes' }],
   creator: 'Victor Mendes',
@@ -41,17 +41,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pt_BR',
     url: SITE.url,
-    title: 'Victor Mendes | Desenvolvedor Front-End',
+    title: 'Victor Mendes | Fullstack Developer & Infra Engineer',
     description: 'Transformando lógica em experiências digitais. Código limpo, infraestrutura robusta e design imersivo.',
     siteName: 'Victor Mendes Portfolio',
-    images: [
-      {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Portfólio Victor Mendes',
-      },
-    ],
   },
 };
 
