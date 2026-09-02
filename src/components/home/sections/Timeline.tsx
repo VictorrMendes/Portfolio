@@ -2,79 +2,18 @@
 
 import { motion } from "framer-motion";
 import Contacts from "./Contacts";
-
-// ==========================================
-// DADOS DA TIMELINE (Baseado no seu PDF)
-// ==========================================
-const timelineData = [
-  {
-    category: "Educação",
-    year: "2024 - 2028",
-    title: "Ciência da Computação",
-    subtitle: "Universidade Anhembi Morumbi",
-    list: []
-  },
-  {
-    category: "Certificações",
-    year: "2025",
-    title: "",
-    subtitle: "",
-    list: [
-      { name: "React / JavaScript", date: "2025" },
-      { name: "Python / Django", date: "2025" },
-      { name: "Linux Professional", date: "2025" },
-      { name: "Git e GitHub", date: "2025" },
-      { name: "Arquitetura de Redes", date: "2025" }
-    ]
-  },
-  {
-    category: "Experiência",
-    year: "2024 - Atual",
-    title: "Analista de Operações",
-    subtitle: "Next Rental (Operação FIAT)",
-    list: [
-      { name: "Automação com Python", date: "" },
-      { name: "Gestão no sistema SAP", date: "" }
-    ]
-  },
-  {
-    category: "Experiência",
-    year: "2023 - Atual",
-    title: "Dev. Freelancer",
-    subtitle: "Autônomo",
-    list: [
-      { name: "Desenvolvimento React", date: "" },
-      { name: "Portfólios e E-commerces", date: "" },
-      { name: "Infraestrutura Web", date: "" }
-    ]
-  },
-  {
-    category: "Experiência",
-    year: "05/2022 - 10/2024",
-    title: "Auxiliar Logístico",
-    subtitle: "Palácio Dos Leilões",
-    list: [
-      { name: "Coordenação de Setor", date: "" },
-      { name: "Relacionamento B2B", date: "" }
-    ]
-  }
-];
+import { timeline as timelineData } from "@/content/timeline";
 
 const Timeline = () => {
   return (
     <div className="mt-20 mb-20 w-full max-w-5xl mx-auto">
-      
-      {/* Cabeçalho */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
         <h2 id="rota" className="font-pixel mb-12 md:mb-16 text-2xl md:text-3xl text-white text-left md:text-center">
-          TRAJETÓRIA / REGISTROS
+          TRAJETORIA / REGISTROS
         </h2>
       </motion.div>
 
-      {/* Container da Árvore */}
       <div className="relative w-full pb-8">
-        
-        {/* Linha Central */}
         <div className="absolute left-[15px] md:left-1/2 top-0 bottom-0 w-[2px] bg-purple-900/50 transform -translate-x-1/2"></div>
 
         {timelineData.map((item, index) => {
@@ -87,24 +26,18 @@ const Timeline = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.15 }}
-              // Ajuste Aqui: Trocado mb-16 por mb-8 no mobile e mb-12 no desktop
               className={`relative flex items-start mb-8 md:mb-12 ${isLeft ? 'md:flex-row-reverse' : 'md:flex-row'} flex-row`}
             >
-              {/* O Nó (Ponto na Linha) */}
-              <div className="absolute left-[15px] md:left-1/2 mt-1.5 w-4 h-4 rounded-full border-2 border-purple-500 bg-[#09030f] flex items-center justify-center z-10 shadow-[0_0_10px_#a855f7] transform -translate-x-1/2">
+              <div className="absolute left-[15px] md:left-1/2 mt-1.5 w-4 h-4 rounded-full border-2 border-purple-500 bg-[#09030f] flex items-center justify-center z-10 transform -translate-x-1/2">
                 <div className="w-1.5 h-1.5 bg-purple-400 rounded-full"></div>
               </div>
 
-              {/* Linha Conectora Horizontal (PC) */}
               <div className={`hidden md:block absolute mt-[13px] w-12 h-[2px] bg-purple-800/80 ${isLeft ? 'right-1/2' : 'left-1/2'}`}></div>
 
-              {/* Linha Conectora Horizontal (Celular) */}
               <div className="md:hidden absolute left-[15px] mt-[13px] w-[25px] h-[2px] bg-purple-800/80"></div>
 
-              {/* Espaçador Fantasma */}
               <div className="hidden md:block w-1/2"></div>
 
-              {/* Bloco de Conteúdo */}
               <div className={`w-full md:w-1/2 ${isLeft ? 'md:pr-12 md:text-right text-left pl-10 md:pl-0' : 'pl-10 md:pl-12 text-left'}`}>
 
                 <div className={`flex flex-wrap items-center gap-2 md:gap-4 mb-4 ${isLeft ? 'md:flex-row-reverse' : 'flex-row'}`}>
@@ -117,13 +50,13 @@ const Timeline = () => {
                 <div className="font-terminal text-gray-300">
                   {item.title && <p className="text-xl md:text-2xl text-white mb-1 font-bold">{item.title}</p>}
                   {item.subtitle && <p className="text-base md:text-lg text-gray-400 mb-4">{item.subtitle}</p>}
+                  {item.description && <p className="text-base md:text-lg text-gray-300 mb-4 leading-relaxed">{item.description}</p>}
 
                   {item.list && item.list.length > 0 && (
                     <ul className="space-y-2 mt-4">
                       {item.list.map((li, i) => (
                         <li key={i} className={`flex justify-between w-full md:w-4/5 ${isLeft ? 'md:ml-auto md:flex-row-reverse' : 'mr-auto'} gap-4 border-b border-purple-900/30 pb-1`}>
                           <span className="text-base md:text-lg text-gray-300">{li.name}</span>
-                          {/* Impede que itens sem data fiquem estranhos */}
                           {li.date && <span className="text-sm md:text-base text-purple-500/70 whitespace-nowrap">{li.date}</span>}
                         </li>
                       ))}

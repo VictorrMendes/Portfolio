@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-/* --- Tailwind v4 Utilities --- */
-
 @utility font-pixel {
   font-family: var(--font-press-start), monospace;
 }
@@ -12,12 +10,11 @@
 }
 
 @utility neon-border {
-  border: 2px solid #a855f7;
-  box-shadow: 0 0 10px rgba(168, 85, 247, 0.5), inset 0 0 10px rgba(168, 85, 247, 0.2);
+  border: 1px solid rgba(168, 85, 247, 0.4);
 }
 
 @utility neon-text {
-  text-shadow: 0 0 8px rgba(168, 85, 247, 0.8);
+  text-shadow: none;
 }
 
 @utility pixel-corners {
@@ -29,10 +26,9 @@
   );
 }
 
-/* Garante que imagens Pixel Art fiquem nítidas (sem blur) */
 @utility pixelated {
-  image-rendering: pixelated; /* Padrão moderno */
-  image-rendering: crisp-edges; /* Fallback */
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 body {
@@ -40,8 +36,6 @@ body {
   color: white;
   overflow-x: hidden;
 }
-
-/* Scrollbar estilizada */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -54,4 +48,9 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #8A2BE2;
+}
+
+:focus-visible {
+  outline: 2px solid #a855f7;
+  outline-offset: 2px;
 }

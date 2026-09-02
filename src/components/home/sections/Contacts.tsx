@@ -2,47 +2,45 @@
 
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { SITE } from "@/content/site";
 
 const Contacts = () => {
   const form = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!form.current) return;
+
     setIsSubmitting(true);
     setStatus("idle");
 
-    if (!form.current) return;
+    const data = Object.fromEntries(new FormData(form.current));
 
-    const SERVICE_ID = "service_jrsodpy"; 
-    const TEMPLATE_ID = "template_36ccewh";
-    const PUBLIC_KEY = "rr3kLnLNvF1y4kYUF";
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-    emailjs
-      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
-      .then(
-        () => {
-          setStatus("success");
-          setIsSubmitting(false);
-          form.current?.reset(); 
-          
-          setTimeout(() => setStatus("idle"), 5000);
-        },
-        (error) => {
-          console.error("FAILED...", error.text);
-          setStatus("error");
-          setIsSubmitting(false);
-        }
-      );
+      if (!res.ok) throw new Error("request failed");
+
+      setStatus("success");
+      form.current.reset();
+      setTimeout(() => setStatus("idle"), 5000);
+    } catch (error) {
+      console.error("FAILED...", error);
+      setStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-      <h2 className="font-pixel mb-2 text-xl text-white">Modo Co-op</h2>
-      <p className="font-terminal text-gray-400 mb-6 text-sm">Inicie uma conexão direta. [Mensagem = ON]</p>
-
+      <h2 className="font-pixel mb-2 text-xl text-white">Modo Cooperative</h2>
       <div className="neon-border pixel-corners bg-[#150a21]/50 p-6 backdrop-blur-sm">
         <form ref={form} onSubmit={sendEmail} className="space-y-4">
           <input 
@@ -72,14 +70,13 @@ const Contacts = () => {
             whileTap={{ scale: 0.98 }}
             type="submit"
             disabled={isSubmitting}
-            className={`w-full rounded py-3 font-pixel text-white text-sm shadow-[0_0_15px_rgba(168,85,247,0.5)] transition-all ${
+            className={`w-full rounded py-3 font-pixel text-white text-sm transition-all ${
               isSubmitting ? "bg-purple-800 cursor-not-allowed" : "bg-[#a855f7] hover:bg-purple-500"
             }`}
           >
             {isSubmitting ? "ENVIANDO..." : "SEND"}
           </motion.button>
 
-          {/* Feedback Visual */}
           {status === "success" && (
             <p className="font-terminal text-green-400 text-lg text-center mt-2">Mensagem enviada com sucesso! Logo retornarei o contato.</p>
           )}
@@ -90,13 +87,13 @@ const Contacts = () => {
       </div>
 
       <div className="flex gap-6 mt-6 font-pixel text-[10px] text-purple-300">
-        <a href="https://www.linkedin.com/in/victor-mendes-de-souza-728270234/" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+        <a href={SITE.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
           <span className="w-3 h-3 bg-purple-700 inline-block rounded-sm"></span> LinkedIn
         </a>
-        <a href="https://github.com/VictorrMendes" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+        <a href={SITE.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
           <span className="w-3 h-3 bg-purple-700 inline-block rounded-full"></span> GitHub
         </a>
-        <a href="https://wa.me/5531998186472" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+        <a href={SITE.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
           <span className="w-3 h-3 bg-purple-700 inline-block rotate-45"></span> WhatsApp
         </a>
       </div>

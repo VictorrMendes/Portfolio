@@ -1,80 +1,99 @@
 "use client";
 
 import { useState } from "react";
+import { SITE } from "@/content/site";
+
+const NAV_ITEMS = [
+  { id: "home", label: "[ HOME ]" },
+  { id: "sobre", label: "SOBRE" },
+  { id: "skills", label: "SKILLS" },
+  { id: "projetos", label: "PROJETOS" },
+  { id: "rota", label: "TIMELINE" },
+];
+
+const FOCUS_RING =
+  "focus-visible:ring-2 focus-visible:ring-purple-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#09030f] focus:outline-none rounded-sm";
 
 const Navbar = () => {
-  // Estado para controlar se o menu mobile está aberto ou fechado
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
-    setIsOpen(false); 
+    setIsOpen(false);
     const element = document.getElementById(id);
     if (element) {
       const y = element.getBoundingClientRect().top + window.scrollY - 100;
-      window.scrollTo({ top: y, behavior: 'smooth' });
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
   return (
-    <nav className="fixed top-4 left-4 right-4 z-40 mx-auto max-w-7xl font-pixel text-[9px] text-purple-300 md:top-6 lg:left-20 lg:right-20">
-      
-      {/* BARRA PRINCIPAL */}
-      <div className="neon-border pixel-corners flex items-center justify-between bg-[#150a21]/80 p-3 backdrop-blur-lg shadow-[0_0_20px_rgba(168,85,247,0.3)]">
-        
-        {/* Lado Esquerdo: Logo */}
-        <div className="flex items-center gap-4">
-          <span className="w-2 h-2 bg-purple-500 animate-pulse"></span>
-          <span className="text-white text-xs md:text-sm neon-text tracking-wider">VICTOR MENDES</span>
+    <nav className="fixed top-0 left-4 right-4 z-40 mx-auto max-w-7xl font-pixel text-[9px] text-purple-300 xl:left-20 xl:right-20">
+      <div className="neon-border pixel-corners flex items-center justify-between gap-4 bg-[#150a21]/80 p-3 backdrop-blur-lg">
+        <div className="flex shrink-0 items-center gap-2 md:gap-4">
+          <span className="w-2 h-2 shrink-0 bg-purple-500 animate-pulse"></span>
+          <span className="whitespace-nowrap text-white text-xs md:text-sm neon-text tracking-wider">VICTOR MENDES</span>
         </div>
 
-        {/* Lado Direito: Links DESKTOP (Escondido no Mobile) */}
-        <div className="hidden md:flex items-center gap-6">
-          <ul className="flex items-center space-x-5 border-r border-purple-900 pr-6 py-1">
-            <li onClick={() => scrollToSection('home')} className="cursor-pointer text-purple-400 hover:text-white hover:neon-text transition-colors">[ HOME ]</li>
-            <li onClick={() => scrollToSection('sobre')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">SOBRE</li>
-            <li onClick={() => scrollToSection('skills')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">SKILLS</li>
-            <li onClick={() => scrollToSection('projetos')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">PROJETOS</li>
-            <li onClick={() => scrollToSection('rota')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">ROTA</li>
+        <div className="hidden lg:flex items-center gap-3 xl:gap-6">
+          <ul className="flex items-center space-x-3 border-r border-purple-900 pr-3 py-1 xl:space-x-5 xl:pr-6">
+            {NAV_ITEMS.map((item) => (
+              <li key={item.id} className="whitespace-nowrap">
+                <button
+                  type="button"
+                  onClick={() => scrollToSection(item.id)}
+                  className={`cursor-pointer text-purple-400 hover:text-white hover:neon-text transition-colors ${FOCUS_RING}`}
+                >
+                  {item.label}
+                </button>
+              </li>
+            ))}
           </ul>
-          <div className="flex items-center gap-4 text-white text-xs">
-            <a href="https://github.com/VictorrMendes" target="_blank" rel="noreferrer" className="hover:text-purple-400 hover:neon-text transition-colors">[GITHUB]</a>
-            <a href="https://www.linkedin.com/in/victor-mendes-de-souza-728270234/" target="_blank" rel="noreferrer" className="hover:text-purple-400 hover:neon-text transition-colors">[LINKEDIN]</a>
-            <a href="https://wa.me/5531998186472" target="_blank" rel="noreferrer" className="hover:text-purple-400 hover:neon-text transition-colors">[WHATSAPP]</a>
+          <div className="flex items-center gap-2 whitespace-nowrap text-white text-xs xl:gap-4">
+            <a href={SITE.github} target="_blank" rel="noreferrer" className={`hover:text-purple-400 hover:neon-text transition-colors ${FOCUS_RING}`}>[GITHUB]</a>
+            <a href={SITE.linkedin} target="_blank" rel="noreferrer" className={`hover:text-purple-400 hover:neon-text transition-colors ${FOCUS_RING}`}>[LINKEDIN]</a>
+            <a href={SITE.whatsapp} target="_blank" rel="noreferrer" className={`hover:text-purple-400 hover:neon-text transition-colors ${FOCUS_RING}`}>[WHATSAPP]</a>
           </div>
         </div>
 
-        {/* Botão do MENU MOBILE (Aparece apenas em telas pequenas) */}
-        <div className="flex md:hidden items-center">
-          <button 
+        <div className="flex lg:hidden items-center">
+          <button
+            type="button"
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white hover:text-purple-400 transition-colors focus:outline-none"
+            aria-expanded={isOpen}
+            aria-controls="menu-mobile"
+            className={`text-white hover:text-purple-400 transition-colors ${FOCUS_RING}`}
           >
             {isOpen ? "[ X ]" : "[ MENU ]"}
           </button>
         </div>
       </div>
 
-      {/* DROPDOWN MOBILE */}
       {isOpen && (
-        <div className="md:hidden mt-2 flex flex-col items-center gap-4 neon-border pixel-corners bg-[#150a21]/95 p-5 backdrop-blur-lg shadow-[0_0_20px_rgba(168,85,247,0.3)] animate-in fade-in slide-in-from-top-2">
-          
+        <div
+          id="menu-mobile"
+          className="lg:hidden mt-2 flex flex-col items-center gap-4 neon-border pixel-corners bg-[#150a21]/95 p-5 backdrop-blur-lg animate-in fade-in slide-in-from-top-2"
+        >
           <ul className="flex flex-col items-center space-y-5 w-full border-b border-purple-900 pb-5 text-[10px]">
-                        <li onClick={() => scrollToSection('home')} className="cursor-pointer text-purple-400 hover:text-white hover:neon-text transition-colors">[ HOME ]</li>
-            <li onClick={() => scrollToSection('sobre')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">SOBRE</li>
-            <li onClick={() => scrollToSection('skills')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">SKILLS</li>
-            <li onClick={() => scrollToSection('projetos')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">PROJETOS</li>
-            <li onClick={() => scrollToSection('rota')} className="cursor-pointer hover:text-white hover:neon-text transition-colors">ROTA</li>
+            {NAV_ITEMS.map((item) => (
+              <li key={item.id}>
+                <button
+                  type="button"
+                  onClick={() => scrollToSection(item.id)}
+                  className={`cursor-pointer text-purple-400 hover:text-white hover:neon-text transition-colors ${FOCUS_RING}`}
+                >
+                  {item.label}
+                </button>
+              </li>
+            ))}
           </ul>
 
           <div className="flex justify-center gap-6 text-white text-[10px] w-full pt-1">
-            <a href="https://github.com/VictorrMendes" target="_blank" rel="noreferrer" className="hover:text-purple-400 hover:neon-text transition-colors">[GITHUB]</a>
-            <a href="https://www.linkedin.com/in/victor-mendes-de-souza-728270234/" target="_blank" rel="noreferrer" className="hover:text-purple-400 hover:neon-text transition-colors">[LINKEDIN]</a>
-            <a href="https://wa.me/5531998186472" target="_blank" rel="noreferrer" className="hover:text-purple-400 hover:neon-text transition-colors">[WHATSAPP]</a>
+            <a href={SITE.github} target="_blank" rel="noreferrer" className={`hover:text-purple-400 hover:neon-text transition-colors ${FOCUS_RING}`}>[GITHUB]</a>
+            <a href={SITE.linkedin} target="_blank" rel="noreferrer" className={`hover:text-purple-400 hover:neon-text transition-colors ${FOCUS_RING}`}>[LINKEDIN]</a>
+            <a href={SITE.whatsapp} target="_blank" rel="noreferrer" className={`hover:text-purple-400 hover:neon-text transition-colors ${FOCUS_RING}`}>[WHATSAPP]</a>
           </div>
-
         </div>
       )}
-
     </nav>
   );
 };
