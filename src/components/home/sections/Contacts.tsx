@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import { SITE } from "@/content/site";
 
 const Contacts = () => {
@@ -10,33 +9,33 @@ const Contacts = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!form.current) return;
+
     setIsSubmitting(true);
     setStatus("idle");
 
-    if (!form.current) return;
+    const data = Object.fromEntries(new FormData(form.current));
 
-    const SERVICE_ID = "service_jrsodpy"; 
-    const TEMPLATE_ID = "template_36ccewh";
-    const PUBLIC_KEY = "rr3kLnLNvF1y4kYUF";
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-    emailjs
-      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
-      .then(
-        () => {
-          setStatus("success");
-          setIsSubmitting(false);
-          form.current?.reset(); 
-          
-          setTimeout(() => setStatus("idle"), 5000);
-        },
-        (error) => {
-          console.error("FAILED...", error.text);
-          setStatus("error");
-          setIsSubmitting(false);
-        }
-      );
+      if (!res.ok) throw new Error("request failed");
+
+      setStatus("success");
+      form.current.reset();
+      setTimeout(() => setStatus("idle"), 5000);
+    } catch (error) {
+      console.error("FAILED...", error);
+      setStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

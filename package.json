@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
     "@vercel/analytics": "^2.0.1",
     "focus-trap-react": "^12.0.3",
     "framer-motion": "^12.38.0",
