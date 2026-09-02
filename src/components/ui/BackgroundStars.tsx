@@ -67,6 +67,9 @@ const BackgroundStars = memo(
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
     const animationFrameRef = useRef<number | null>(null);
     const shootingStarTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+    // Holds the latest animateCanvas so the loop can call itself without
+    // referencing the useCallback binding before it finishes initializing.
+    const animateCanvasRef = useRef<(timestamp: number) => void>(() => {});
 
     // State references
     const backgroundStarsRef = useRef<BackgroundStar[]>([]);
@@ -74,17 +77,20 @@ const BackgroundStars = memo(
     const lastRenderTimeRef = useRef<number>(0);
     const frameInterval: number = 1000 / targetFps;
 
-    // Get random starting point for shooting stars
+    // Get random starting point for shooting stars — spread across the
+    // full (page-height) canvas, not just the first screenful, so they
+    // can appear no matter how far down the page the user has scrolled.
     const getRandomStartPoint = useCallback((): StartPoint => {
-      // Start from anywhere along the top edge
+      const canvasHeight = canvasRef.current?.height ?? window.innerHeight;
       const x = Math.random() * window.innerWidth;
+      const y = Math.random() * canvasHeight * 0.8;
 
       // Randomize the angle with a wider range (45-135 degrees)
       // 90 degrees is straight down
       // 45 degrees is down-right, 135 degrees is down-left
       const angle = 45 + Math.random() * 90;
 
-      return { x, y: 0, angle };
+      return { x, y, angle };
     }, []);
 
     // Create a new shooting star
@@ -175,14 +181,14 @@ const BackgroundStars = memo(
       (timestamp: number): void => {
         // Skip frames to limit to target FPS
         if (timestamp - lastRenderTimeRef.current < frameInterval) {
-          animationFrameRef.current = requestAnimationFrame(animateCanvas);
+          animationFrameRef.current = requestAnimationFrame((t) => animateCanvasRef.current(t));
           return;
         }
 
         lastRenderTimeRef.current = timestamp;
 
         if (!canvasRef.current) {
-          animationFrameRef.current = requestAnimationFrame(animateCanvas);
+          animationFrameRef.current = requestAnimationFrame((t) => animateCanvasRef.current(t));
           return;
         }
 
@@ -190,7 +196,7 @@ const BackgroundStars = memo(
         const ctx = canvas.getContext("2d");
 
         if (!ctx) {
-          animationFrameRef.current = requestAnimationFrame(animateCanvas);
+          animationFrameRef.current = requestAnimationFrame((t) => animateCanvasRef.current(t));
           return;
         }
 
@@ -265,7 +271,7 @@ const BackgroundStars = memo(
                 star.x >= -30 &&
                 star.x <= window.innerWidth + 30 &&
                 star.y >= -30 &&
-                star.y <= window.innerHeight + 30,
+                star.y <= (canvasRef.current?.height ?? window.innerHeight) + 30,
             );
 
           // 3. Draw shooting stars
@@ -313,18 +319,29 @@ const BackgroundStars = memo(
           });
         }
 
-        animationFrameRef.current = requestAnimationFrame(animateCanvas);
+        animationFrameRef.current = requestAnimationFrame((t) => animateCanvasRef.current(t));
       },
       [frameInterval],
     );
+
+    useEffect(() => {
+      animateCanvasRef.current = animateCanvas;
+    }, [animateCanvas]);
 
     // Initialize the component
     useEffect(() => {
       if (!canvasRef.current) return;
 
-      // Set canvas dimensions
-      canvasRef.current.width = window.innerWidth;
-      canvasRef.current.height = window.innerHeight;
+      // Size the canvas to the full page height (not just the viewport),
+      // so the starfield covers the whole scrollable page instead of only
+      // the first screenful.
+      const setCanvasSize = (): void => {
+        if (!canvasRef.current) return;
+        canvasRef.current.width = window.innerWidth;
+        canvasRef.current.height = document.documentElement.scrollHeight;
+      };
+
+      setCanvasSize();
 
       // Initialize background stars
       initBackgroundStars();
@@ -349,16 +366,18 @@ const BackgroundStars = memo(
       // Set up regeneration interval for background stars
       const regenerationInterval = setInterval(regenerateBackgroundStars, starRegenerationInterval);
 
-      // Handle window resize
+      // Recompute canvas size whenever the viewport OR the page's total
+      // content height changes (window resize, content loading in,
+      // fonts/images finishing layout, etc.)
       const handleResize = (): void => {
-        if (canvasRef.current) {
-          canvasRef.current.width = window.innerWidth;
-          canvasRef.current.height = window.innerHeight;
-          initBackgroundStars();
-        }
+        setCanvasSize();
+        initBackgroundStars();
       };
 
       window.addEventListener("resize", handleResize);
+
+      const resizeObserver = new ResizeObserver(handleResize);
+      resizeObserver.observe(document.documentElement);
 
       // Pause the animation loop while the tab isn't visible (saves CPU/battery)
       const handleVisibilityChange = (): void => {
@@ -385,10 +404,11 @@ const BackgroundStars = memo(
         clearInterval(regenerationInterval);
         window.removeEventListener("resize", handleResize);
         document.removeEventListener("visibilitychange", handleVisibilityChange);
+        resizeObserver.disconnect();
       };
     }, [animateCanvas, createNewShootingStar, initBackgroundStars, regenerateBackgroundStars]);
 
-    return <canvas ref={canvasRef} className="pointer-events-none fixed inset-0" />;
+    return <canvas ref={canvasRef} className="pointer-events-none absolute inset-0" />;
   },
   () => true,
 );

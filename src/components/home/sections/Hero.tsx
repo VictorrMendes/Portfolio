@@ -28,7 +28,7 @@ const Hero = () => (
         whileTap={{ scale: 0.95 }}
         className="neon-border pixel-corners group relative inline-block bg-[#8A2BE2]/20 px-10 py-5 font-pixel text-sm text-white transition-colors hover:bg-[#8A2BE2]/60"
       >
-        [ PRESS START / INICIAR JORNADA ]
+        [ PRESS START / BAIXAR CURRICULO ]
       </motion.a>
     </motion.div>
 

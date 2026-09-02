@@ -41,7 +41,7 @@ export const projects: Project[] = [
     shortDesc: "PWA financeiro com dashboard de ativos, análise gráfica e agenda de pagamentos. Next.js 15 + TypeScript + Django. Deploy na Vercel.",
     tech: ["Next.js 15", "TypeScript", "Tailwind v4", "Django"],
     image: "/projects/financeVM.png",
-    link: "https://myfinances-self.vercel.app",
+    link: "https://myfinances-self.vercel.app/login",
     content: (
       <div className="space-y-4 md:space-y-6 text-gray-300 font-sans text-base md:text-lg leading-relaxed">
         <p>Um aplicativo web progressivo (PWA) moderno e responsivo para gestão financeira pessoal. Controle total de receitas, despesas, cartões e investimentos com uma interface estilo Fintech.</p>

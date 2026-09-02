@@ -9,7 +9,7 @@ const Timeline = () => {
     <div className="mt-20 mb-20 w-full max-w-5xl mx-auto">
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
         <h2 id="rota" className="font-pixel mb-12 md:mb-16 text-2xl md:text-3xl text-white text-left md:text-center">
-          TRAJETÓRIA / REGISTROS
+          TRAJETORIA / REGISTROS
         </h2>
       </motion.div>
 
